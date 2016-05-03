@@ -5,14 +5,13 @@ Created on Tue Apr 26 10:52:46 2016
 @author: donghochoi
 """
 import sys
-sys.path.append("../config")
+sys.path.append("../config/")
 import fitbit_credentials # two arrays: key, token
 import fitbit_used
 import server_config
 
 import fitbit
 from datetime import date,timedelta
-
 
 import pandas as pd
 from sshtunnel import SSHTunnelForwarder # for SSH connection
@@ -74,6 +73,9 @@ connection = pymysql.connect(host='127.0.0.1',
                              db=server_config.study_2015_db['database'])
 cursor = connection.cursor()
 
+
+#------------------------- Steps data ------------------------------------
+
 # Drop table if it already exist using execute() method.
 cursor.execute("DROP TABLE IF EXISTS fitbit_step")
 sql ="CREATE TABLE fitbit_step (batch int, deviceID int, date varchar(255), steps int);"
@@ -81,7 +83,6 @@ cursor.execute(sql)
 cursor.execute("DROP TABLE IF EXISTS fitbit_intraday_step")
 sql ="CREATE TABLE fitbit_intraday_step (batch int, deviceID int, date varchar(255), time varchar(255), steps int);"
 cursor.execute(sql)
-
 
 
 # Batch 1 - fitbit_step & fitbit_intraday_step
@@ -175,5 +176,6 @@ for i in range(participants_num):
             min_steps = int(result['activities-steps-intraday']['dataset'][j]['value'])
             sql = "INSERT INTO fitbit_intraday_step VALUE('4','"+str(cur_id)+"','"+str(cur_date)+"','"+str(time)+"',"+str(min_steps)+");"
             cursor.execute(sql) 
+            
 # Close ssh server connection    
 server.stop() 
