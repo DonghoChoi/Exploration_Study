@@ -19,18 +19,7 @@ current_all_data = base_directory + "data_upto_110916/data"
 #print("mmddyy:%s" %(date_today.strftime('%m%d%y')))
 
 
-info2_server = {
-    'user': 'dc817',
-    'password':'Chlehdgh0717',
-    'host':'128.6.192.99'
-}
 
-exploration_db = {
-  'user': 'dc817',
-  'password': 'Chlehdgh0717',
-  'host': '128.6.192.99',
-  'database': 'ExplorationStudy',
-  'raise_on_warnings': True
 }
 =======
 directory_of_all_data = '/Users/donghochoi/Documents/Work/Sensors_Study/Dropbox/Apps/Funf In A Box/daily_process/data'
