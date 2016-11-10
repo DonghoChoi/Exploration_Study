@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # Author: Dongho Choi
 
-#import time
 
 import config
 import json
@@ -50,17 +49,26 @@ if __name__ == "__main__":
         remote_bind_address=('127.0.0.1', 3306))
 
     server.start()
+    #print(server.local_bind_port)
 
     connection = pymysql.connect(host='127.0.0.1',
                                  port=server.local_bind_port,
                                  user=config.exploration_db['user'],
                                  password=config.exploration_db['password'],
                                  db=config.exploration_db['database'])
+    connection.autocommit(True)
     cursor = connection.cursor()
+    print("MySQL connection established.")
+
+    #sql = "INSERT INTO locations_all(device, timestamp, date_time, year, month, day, hour, minute, provider, latitude, longitude, speed) VALUES('42f18da2-9168-457a-b6ae-1efb8093a4e1', '1478184781.81', '2016-11-03 10:53:01', '2016', '11', '3', '10','53', 'gps', '40.48994064', '-74.44172858', '0.0');"
+    #cursor.execute(sql)
+    #print("end")
+    #exit()
 
     #print(directory_of_all_data)
-    all_data_db = config.directory_of_all_data + "/all_data.db"
-    #print(all_data_db)
+    # all_data_db = config.directory_of_all_data + "/all_data.db"
+    all_data_db = config.current_all_data + "/all_data.db"
+    print(all_data_db)
 
     # Check if the all_data database file exists
     if (os.path.isfile(all_data_db) == False):
@@ -113,10 +121,21 @@ if __name__ == "__main__":
         # pick the first data point from each hour
         for i in range(0,len(device_imei_list)):
             current_imei = device_imei_list[i]
-            print(current_imei)
             temp_df = df[(df['imei'] == current_imei) & (df['month'] >=  11)]
             print("current imei: %s, number of rows: %d" % (current_imei, len(temp_df.index)))
+            if ((current_imei=="867290026305689") | (current_imei=="867290026305697")):
+                current_userID = 21
+            else:
+                sql = ("SELECT userID FROM recruits WHERE imei = '"+str(current_imei)+"';")
+                cursor.execute(sql)
+                result = cursor.fetchone()
+                print("userID: %d" % (result))
+                current_userID = result[0]
+
             temp_df = temp_df.sort_values(['timestamp']) # sort by ascending timestamp
+
+            if(len(temp_df.index)==0):
+                continue
 
             target_df = temp_df.iloc[[0]]
             #print(target_df)
@@ -144,7 +163,7 @@ if __name__ == "__main__":
                         #print("update")
 
                 print("number of rows in target for current imei(%s):%d" % (current_imei,len(target_df.index)))
-                print(target_df)
+                #print(target_df)
 
             for k in range(0,len(target_df.index)):
                 m_device = target_df.iloc[k]['device']
@@ -159,12 +178,9 @@ if __name__ == "__main__":
                 m_latitude = target_df.iloc[k]['latitude']
                 m_longitude = target_df.iloc[k]['longitude']
                 m_speed = target_df.iloc[k]['speed']
-                sql = "INSERT INTO locations_all (device,timestamp,date_time,year,month,day,hour,minute,provider,latitude,longitude,speed) VALUES ('"+str(m_device)+"','"+str(m_timestamp)+"','"+str(m_date_time)+"','"+str(m_year)+"','"+str(m_month)+"','"+str(m_day)+"','"+str(m_hour)+"','"+str(m_minute)+"','"+str(m_provider)+"','"+str(m_latitude)+"','"+str(m_longitude)+"','"+str(m_speed)+"');"
+                sql = "INSERT INTO locations_all (imei,userID,device,timestamp,date_time,year,month,day,hour,minute,provider,latitude,longitude,speed) VALUES ('"+str(current_imei)+"','"+str(current_userID)+"','"+str(m_device)+"','"+str(m_timestamp)+"','"+str(m_date_time)+"','"+str(m_year)+"','"+str(m_month)+"','"+str(m_day)+"','"+str(m_hour)+"','"+str(m_minute)+"','"+str(m_provider)+"','"+str(m_latitude)+"','"+str(m_longitude)+"','"+str(m_speed)+"');"
                 print(sql)
                 cursor.execute(sql)
-
-
-
 
                 # insert dataframe into MySQL DB
 

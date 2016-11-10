@@ -8,3 +8,5 @@ local/config.py
 # Python
 *.pyc
 
+local/__pycache__/
+study_2015/__pycache__/

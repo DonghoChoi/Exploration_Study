@@ -44,8 +44,9 @@ def get_imei_list(con):
 
 if __name__ == "__main__":
     #print(directory_of_all_data)
-    all_data_db = config.directory_of_all_data + "/all_data.db"
-    #print(all_data_db)
+    #all_data_db = config.directory_of_all_data + "/all_data.db"
+    all_data_db = config.current_all_data + "/all_data.db"
+    print(all_data_db)
 
     # Check if the all_data database file exists
     if (os.path.isfile(all_data_db) == False):
