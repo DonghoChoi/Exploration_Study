@@ -4,12 +4,17 @@
 import datetime, time
 import os
 import shutil
-import config
+#import config
+
+import sys, datetime
+sys.path.append("./configs/")
+import server_config # (1) info2_server (2) exploration_db
+import directory_config # (1) base_directory (2) raw_data_directory
 
 
 #src_directory = '/Users/donghochoi/Documents/Work/Sensors_Study/Dropbox/Apps/Funf In A Box/RU SensorStudy/data/raw'
-src_directory = config.raw_data_directory
-dst_directory = '/Users/donghochoi/Documents/Work/Sensors_Study/Dropbox/Apps/Funf In A Box/data_upto_110916/data/raw'
+src_directory = directory_config.raw_data_directory
+dst_directory = '/Users/donghochoi/Documents/Work/Sensors_Study/Dropbox/Apps/Funf In A Box/1112to1113/data/raw'
 
 '''
 # For directory 'data_upto_110516'
@@ -21,10 +26,22 @@ end_day = datetime.datetime(2016,11,8,0,0).timestamp()
 # For directory 'data_upto_110816'
 start_day = datetime.datetime(2016,11,8,0,0).timestamp()
 end_day = datetime.datetime(2016,11,9,0,0).timestamp()
-'''
-# For directory 'data_upto_110916'
-start_day = datetime.datetime(2016,11,9,0,0).timestamp()
+# For directory 'data_upto_111016'
+start_day = datetime.datetime(2016,11,10,0,0).timestamp()
+end_day = datetime.datetime(2016,11,11,0,0).timestamp()
+# For directory '1102to1106'
+start_day = datetime.datetime(2016,11,2,0,0).timestamp()
+end_day = datetime.datetime(2016,11,7,0,0).timestamp()
+# For directory '1107to1109'
+start_day = datetime.datetime(2016,11,7,0,0).timestamp()
 end_day = datetime.datetime(2016,11,10,0,0).timestamp()
+# For directory '1110to1111'
+start_day = datetime.datetime(2016,11,10,0,0).timestamp()
+end_day = datetime.datetime(2016,11,12,0,0).timestamp()
+'''
+# For directory '1112to1113'
+start_day = datetime.datetime(2016,11,12,0,0).timestamp()
+end_day = datetime.datetime(2016,11,14,0,0).timestamp()
 
 print("start day: %s, end day: %s" % (start_day,end_day))
 

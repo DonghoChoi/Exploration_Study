@@ -5,7 +5,7 @@ Created on Tue Apr 26 10:52:46 2016
 @author: donghochoi
 """
 import sys
-sys.path.append("../config/")
+sys.path.append("../configs/")
 import fitbit_credentials # two arrays: key, token
 import fitbit_used
 import server_config
@@ -15,8 +15,8 @@ from datetime import date,timedelta
 
 import pandas as pd
 from sshtunnel import SSHTunnelForwarder # for SSH connection
-#from config import server_config #import info1_server # server configuration class
-#from .config/server_config import study_2015_db # fitbit database configuration class
+#from configs import server_config #import info1_server # server configuration class
+#from .configs/server_config import study_2015_db # fitbit database configuration class
 import pymysql.cursors # MySQL handling API
 
 # fitbit app - rusensor

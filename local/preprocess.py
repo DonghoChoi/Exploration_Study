@@ -6,7 +6,7 @@
 
 #import time
 
-import config
+#import config
 import json
 import sqlite3 as lite
 import time
@@ -19,12 +19,13 @@ import string
 import os.path
 import csv
 import sys
+sys.path.append("./configs/")
+import directory_config # (1) base_directory (2) raw_data_directory
 
 
 device_imei = {} # a set: device_imei[device] = IMEI
 device_imei_list = []
 num_device = 0
-
 
 def get_imei_list(con):
 
@@ -44,8 +45,9 @@ def get_imei_list(con):
 
 if __name__ == "__main__":
     #print(directory_of_all_data)
-    #all_data_db = config.directory_of_all_data + "/all_data.db"
-    all_data_db = config.current_all_data + "/all_data.db"
+    #all_data_db = configs.directory_of_all_data + "/all_data.db"
+    #all_data_db = config.current_all_data + "/all_data.db"
+    all_data_db = directory_config.base_directory + "data_upto_111016/data/all_data.db"
     print(all_data_db)
 
     # Check if the all_data database file exists

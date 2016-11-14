@@ -2,7 +2,7 @@
 # Author: Dongho Choi
 
 
-import config
+#import config
 import json
 import sqlite3 as lite
 import time
@@ -13,15 +13,20 @@ import glob
 from time import localtime, strftime
 import string
 import os.path
-import csv
+import datetime
 import sys
 from sshtunnel import SSHTunnelForwarder # for SSH connection
 import pymysql.cursors # MySQL handling API
 
+import sys
+sys.path.append("./configs/")
+import server_config # (1) info2_server (2) exploration_db
+import directory_config # (1) base_directory (2) raw_data_directory
+
+
 device_imei = {} # a set: device_imei[device] = IMEI
 device_imei_list = []
 num_device = 0
-
 
 def get_imei_list(con):
 
@@ -41,11 +46,12 @@ def get_imei_list(con):
 
 if __name__ == "__main__":
 
+
     # Server connection
     server = SSHTunnelForwarder(
-        (config.info2_server['host'], 22),
-        ssh_username=config.info2_server['user'],
-        ssh_password=config.info2_server['password'],
+        (server_config.info2_server['host'], 22),
+        ssh_username=server_config.info2_server['user'],
+        ssh_password=server_config.info2_server['password'],
         remote_bind_address=('127.0.0.1', 3306))
 
     server.start()
@@ -53,9 +59,9 @@ if __name__ == "__main__":
 
     connection = pymysql.connect(host='127.0.0.1',
                                  port=server.local_bind_port,
-                                 user=config.exploration_db['user'],
-                                 password=config.exploration_db['password'],
-                                 db=config.exploration_db['database'])
+                                 user=server_config.exploration_db['user'],
+                                 password=server_config.exploration_db['password'],
+                                 db=server_config.exploration_db['database'])
     connection.autocommit(True)
     cursor = connection.cursor()
     print("MySQL connection established.")
@@ -66,8 +72,9 @@ if __name__ == "__main__":
     #exit()
 
     #print(directory_of_all_data)
-    # all_data_db = config.directory_of_all_data + "/all_data.db"
-    all_data_db = config.current_all_data + "/all_data.db"
+    # all_data_db = configs.directory_of_all_data + "/all_data.db"
+    #all_data_db = config.current_all_data + "/all_data.db"
+    all_data_db = directory_config.base_directory + "1111to1112/data/all_data.db"
     print(all_data_db)
 
     # Check if the all_data database file exists
@@ -178,7 +185,13 @@ if __name__ == "__main__":
                 m_latitude = target_df.iloc[k]['latitude']
                 m_longitude = target_df.iloc[k]['longitude']
                 m_speed = target_df.iloc[k]['speed']
-                sql = "INSERT INTO locations_all (imei,userID,device,timestamp,date_time,year,month,day,hour,minute,provider,latitude,longitude,speed) VALUES ('"+str(current_imei)+"','"+str(current_userID)+"','"+str(m_device)+"','"+str(m_timestamp)+"','"+str(m_date_time)+"','"+str(m_year)+"','"+str(m_month)+"','"+str(m_day)+"','"+str(m_hour)+"','"+str(m_minute)+"','"+str(m_provider)+"','"+str(m_latitude)+"','"+str(m_longitude)+"','"+str(m_speed)+"');"
+                m_imei_timestamp = str(current_imei)+'_'+str(m_timestamp)
+                m_now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                sql = "INSERT INTO locations_all (inserted_time,imei_timestamp,imei,userID,device,timestamp,date_time,year,month,day,hour,minute,provider,latitude,longitude,speed) " \
+                      "VALUES ('"+str(m_now)+"','"+str(m_imei_timestamp)+"','"+str(current_imei)+"','"+str(current_userID)+"','"+str(m_device)+"','"+\
+                      str(m_timestamp)+"','"+str(m_date_time)+"','"+str(m_year)+"','"+str(m_month)+"','"+str(m_day)+"','"+str(m_hour)+"','"+\
+                      str(m_minute)+"','"+str(m_provider)+"','"+str(m_latitude)+"','"+str(m_longitude)+"','"+str(m_speed)+\
+                      "') ON DUPLICATE KEY UPDATE device = '"+str(m_device)+"';"
                 print(sql)
                 cursor.execute(sql)
 
