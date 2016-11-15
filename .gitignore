@@ -3,7 +3,7 @@ config/
 local/configs/
 server/config/
 study_2015/config/
-local/config.py
+
 
 # Python
 *.pyc
