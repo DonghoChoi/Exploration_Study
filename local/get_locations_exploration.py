@@ -1,14 +1,11 @@
 #!/usr/bin/python
 # Author: Dongho Choi
 
-
-#import config
 import json
 import sqlite3 as lite
 import time
 import pandas as pd
 from collections import defaultdict
-#import utils
 import glob
 from time import localtime, strftime
 import string
@@ -37,8 +34,10 @@ def get_imei_list(con):
 
     for x in data_imei:
         j = json.loads(x[1])  # x[1]: content in value column from the query results
-        imei_num = j['deviceId']
-        device_imei[x[0]] = imei_num  # create an array of (1) device (number) and (2) imei number
+        #print(j)
+        if 'deviceId' in j:
+            imei_num = j['deviceId']
+            device_imei[x[0]] = imei_num  # create an array of (1) device (number) and (2) imei number
         #print("device number:%s, imei number:%s" % (x[0],imei_num))
     num_device = len(device_imei)
     #print (len(device_imei)) # length of the set 'device_imei'
@@ -66,15 +65,7 @@ if __name__ == "__main__":
     cursor = connection.cursor()
     print("MySQL connection established.")
 
-    #sql = "INSERT INTO locations_all(device, timestamp, date_time, year, month, day, hour, minute, provider, latitude, longitude, speed) VALUES('42f18da2-9168-457a-b6ae-1efb8093a4e1', '1478184781.81', '2016-11-03 10:53:01', '2016', '11', '3', '10','53', 'gps', '40.48994064', '-74.44172858', '0.0');"
-    #cursor.execute(sql)
-    #print("end")
-    #exit()
-
-    #print(directory_of_all_data)
-    # all_data_db = configs.directory_of_all_data + "/all_data.db"
-    #all_data_db = config.current_all_data + "/all_data.db"
-    all_data_db = directory_config.base_directory + "1111to1112/data/all_data.db"
+    all_data_db = directory_config.exploration_base_directory + "1115to1116/data/all_data.db"
     print(all_data_db)
 
     # Check if the all_data database file exists
