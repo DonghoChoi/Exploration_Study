@@ -14,34 +14,13 @@ import directory_config # (1) base_directory (2) raw_data_directory
 
 #src_directory = '/Users/donghochoi/Documents/Work/Sensors_Study/Dropbox/Apps/Funf In A Box/RU SensorStudy/data/raw'
 src_directory = directory_config.sensor_raw_data_directory
-dst_directory = '/Users/donghochoi/Documents/Work/Sensors_Study/Dropbox/Apps/Funf In A Box/RU SensorStudy/1115to1116/data/raw'
+dst_directory = '/Users/donghochoi/Documents/Work/Sensors_Study/Dropbox/Apps/Funf In A Box/RU SensorStudy/1204to1205/data/raw'
+#dst_directory = '/Users/donghochoi/Documents/temp/SensorStudy/data/raw'
 
-'''
-# For directory 'data_upto_110516'
-end_day = datetime.datetime(2016,11,6,0,0).timestamp()
-start_day = datetime.datetime(2016,11,1,0,0).timestamp()
-# For directory 'data_upto_110716'
-start_day = datetime.datetime(2016,11,7,0,0).timestamp()
-end_day = datetime.datetime(2016,11,8,0,0).timestamp()
-# For directory 'data_upto_110816'
-start_day = datetime.datetime(2016,11,8,0,0).timestamp()
-end_day = datetime.datetime(2016,11,9,0,0).timestamp()
-# For directory 'data_upto_111016'
-start_day = datetime.datetime(2016,11,10,0,0).timestamp()
-end_day = datetime.datetime(2016,11,11,0,0).timestamp()
-# For directory '1102to1106'
-start_day = datetime.datetime(2016,11,2,0,0).timestamp()
-end_day = datetime.datetime(2016,11,7,0,0).timestamp()
-# For directory '1107to1109'
-start_day = datetime.datetime(2016,11,7,0,0).timestamp()
-end_day = datetime.datetime(2016,11,10,0,0).timestamp()
-# For directory '1110to1111'
-start_day = datetime.datetime(2016,11,10,0,0).timestamp()
-end_day = datetime.datetime(2016,11,12,0,0).timestamp()
-'''
+
 # For directory '1112to1113'
-start_day = datetime.datetime(2016,11,15,0,0).timestamp()
-end_day = datetime.datetime(2016,11,17,0,0).timestamp()
+start_day = datetime.datetime(2016,12,4,0,0).timestamp()
+end_day = datetime.datetime(2016,12,6,0,0).timestamp()
 
 print("start day: %s, end day: %s" % (start_day,end_day))
 

@@ -45,7 +45,7 @@ def get_imei_list(con):
 
 if __name__ == "__main__":
 
-    all_data_db = directory_config.exploration_base_directory + "1115/data/all_data.db"
+    all_data_db = directory_config.exploration_base_directory + "1123to1124/data/all_data.db"
     print(all_data_db)
 
     # Check if the all_data database file exists

@@ -65,7 +65,7 @@ if __name__ == "__main__":
     cursor = connection.cursor()
     print("MySQL connection established.")
 
-    all_data_db = directory_config.exploration_base_directory + "1115to1116/data/all_data.db"
+    all_data_db = directory_config.exploration_base_directory + "1204to1205/data/all_data.db"
     print(all_data_db)
 
     # Check if the all_data database file exists
@@ -94,7 +94,10 @@ if __name__ == "__main__":
         df["imei"]=""
 
         for i in range(0,len(df.index)):
-            df.at[i,"imei"] = device_imei[df.at[i,"device"]]
+            try: #device_imei[df.at[i,"device"]]:
+                df.at[i,"imei"] = device_imei[df.at[i,"device"]]
+            except KeyError:
+                print("KeyError")
 
 
         # add additional columns realted to time:

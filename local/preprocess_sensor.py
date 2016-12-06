@@ -47,7 +47,8 @@ if __name__ == "__main__":
     #print(directory_of_all_data)
     #all_data_db = configs.directory_of_all_data + "/all_data.db"
     #all_data_db = config.current_all_data + "/all_data.db"
-    all_data_db = directory_config.base_directory + "data_upto_111016/data/all_data.db"
+    #all_data_db = directory_config.base_directory + "data_upto_111016/data/all_data.db"
+    all_data_db = directory_config.sensor_base_directory + "1123to1124/data/all_data.db"
     print(all_data_db)
 
     # Check if the all_data database file exists
