@@ -65,7 +65,7 @@ if __name__ == "__main__":
     cursor = connection.cursor()
     print("MySQL connection established.")
 
-    all_data_db = directory_config.exploration_base_directory + "1204to1205/data/all_data.db"
+    all_data_db = directory_config.exploration_base_directory + "1206to1210/data/all_data.db"
     print(all_data_db)
 
     # Check if the all_data database file exists
