@@ -1,9 +1,6 @@
 #!/usr/bin/python
 # Author: Dongho Choi
 
-#!/usr/bin/python
-# Author: Dongho Choi
-
 #import time
 
 #import config

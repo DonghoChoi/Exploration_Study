@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88af48be-b1ce-4a79-8b05-26b714076809" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/search_log_analysis_dyad.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/copy_files_exploration.py" afterPath="$PROJECT_DIR$/local/copy_files_exploration.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/copy_files_sensor.py" afterPath="$PROJECT_DIR$/local/copy_files_sensor.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/get_locations_exploration.py" afterPath="$PROJECT_DIR$/local/get_locations_exploration.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/get_locations_sensor.py" afterPath="$PROJECT_DIR$/local/get_locations_sensor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/preprocess_exploration.py" afterPath="$PROJECT_DIR$/local/preprocess_exploration.py" />
     </list>
     <ignored path="Code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,6 +22,7 @@
     <SUITE FILE_PATH="coverage/Code$get_locations_exploration.coverage" NAME="get_locations_exploration Coverage Results" MODIFIED="1481476262066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1478842765428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$merge_db.coverage" NAME="merge_db Coverage Results" MODIFIED="1480083514716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$search_log_analysis_sigir2017.coverage" NAME="search_log_analysis_sigir2017 Coverage Results" MODIFIED="1484340053190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$get_locations_sensor.coverage" NAME="get_locations_sensor Coverage Results" MODIFIED="1481472182406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$test.coverage" NAME="test Coverage Results" MODIFIED="1478846163973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$copy_files_exploration.coverage" NAME="copy_files_exploration Coverage Results" MODIFIED="1481473546438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
@@ -52,22 +51,10 @@
       <file leaf-file-name="preprocess_exploration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local/preprocess_exploration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="47" column="93" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="93" />
+            <state relative-caret-position="0">
+              <caret line="39" column="63" lean-forward="false" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
               <folding>
-                <marker date="1480088468000" expanded="true" signature="641:701" ph="SELECT devic... data" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="copy_files_sensor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/copy_files_sensor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="110" lean-forward="false" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
-              <folding>
-                <element signature="e#93#114#0" expanded="true" />
+                <marker date="1484073300000" expanded="true" signature="600:660" ph="SELECT devic... data" />
               </folding>
             </state>
           </provider>
@@ -76,8 +63,8 @@
       <file leaf-file-name="get_locations_sensor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local/get_locations_sensor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="67" column="70" lean-forward="false" selection-start-line="67" selection-start-column="70" selection-end-line="67" selection-end-column="70" />
+            <state relative-caret-position="75">
+              <caret line="169" column="12" lean-forward="true" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
               <folding>
                 <element signature="e#41#52#0" expanded="true" />
                 <marker date="1481472182000" expanded="true" signature="739:799" ph="SELECT devic... data" />
@@ -105,25 +92,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="copy_files_exploration.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/copy_files_exploration.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_locations_exploration.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="get_locations_exploration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local/get_locations_exploration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="183" column="16" lean-forward="false" selection-start-line="183" selection-start-column="16" selection-end-line="189" selection-end-column="35" />
               <folding>
                 <marker date="1481473546000" expanded="true" signature="739:799" ph="SELECT devic... data" />
                 <marker date="1481473546000" expanded="true" signature="3010:3081" ph="SELECT devic... " />
                 <marker date="1481473546000" expanded="true" signature="5203:5267" ph="SELECT userI... recruits" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preprocess_sensor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/preprocess_sensor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="64" column="89" lean-forward="false" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
+              <folding>
+                <marker date="1480092273000" expanded="true" signature="641:701" ph="SELECT devic... data" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_log_analysis_dyad.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/local/search_log_analysis_dyad.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4515">
+              <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+              <folding>
+                <element signature="e#41#55#0" expanded="true" />
+                <marker date="1484340053000" expanded="true" signature="7072:7104" ph="SELECT * FRO... final_participants" />
+                <marker date="1484340053000" expanded="true" signature="7527:7622" ph="SELECT userI... " />
+                <marker date="1484340053000" expanded="true" signature="7836:7878" ph="SELECT * FRO... queries" />
+                <marker date="1484340053000" expanded="true" signature="15694:15714" ph="DROP TABLE I... " />
+                <marker date="1484340053000" expanded="true" signature="15694:15730" ph="DROP TABLE I... " />
+                <marker date="1484340053000" expanded="true" signature="15768:15798" ph="CREATE TABLE... CREATE" />
+                <marker date="1484340053000" expanded="true" signature="15768:15804" ph="CREATE TABLE... CREATE" />
+                <marker date="1484340053000" expanded="true" signature="15768:15813" ph="CREATE TABLE... CREATE" />
+                <marker date="1484340053000" expanded="true" signature="15768:15831" ph="CREATE TABLE... CREATE" />
+                <marker date="1484340053000" expanded="true" signature="15768:15856" ph="CREATE TABLE... CREATE" />
+                <marker date="1484340053000" expanded="true" signature="15768:15870" ph="CREATE TABLE... CREATE" />
+                <marker date="1484340053000" expanded="true" signature="15768:15879" ph="CREATE TABLE... CREATE" />
+                <marker date="1484340053000" expanded="true" signature="15768:15908" ph="CREATE TABLE... CREATE" />
+                <marker date="1484340053000" expanded="true" signature="15768:15909" ph="CREATE TABLE... CREATE" />
+                <marker date="1484340053000" expanded="true" signature="15768:15910" ph="CREATE TABLE... individual_data" />
+                <marker date="1484340053000" expanded="true" signature="15991:16087" ph="INSERT INTO individual_data... " />
+                <marker date="1484340053000" expanded="true" signature="15991:16096" ph="INSERT INTO individual_data... " />
+                <marker date="1484340053000" expanded="true" signature="15991:16160" ph="INSERT INTO individual_data... " />
+                <marker date="1484340053000" expanded="true" signature="15991:16213" ph="INSERT INTO individual_data... " />
+                <marker date="1484340053000" expanded="true" signature="15991:16271" ph="INSERT INTO individual_data... " />
+                <marker date="1484340053000" expanded="true" signature="15991:16274" ph="INSERT INTO individual_data... " />
+                <marker date="1484340053000" expanded="true" signature="15991:16343" ph="INSERT INTO individual_data... " />
+                <marker date="1484340053000" expanded="true" signature="15991:16407" ph="INSERT INTO individual_data... " />
+                <marker date="1484340053000" expanded="true" signature="15991:16409" ph="INSERT INTO individual_data... " />
+                <marker date="1484340053000" expanded="true" signature="16466:16496" ph="DROP TABLE I... " />
+                <marker date="1484340053000" expanded="true" signature="16534:16685" ph="CREATE TABLE... dyad_data" />
+                <marker date="1484340053000" expanded="true" signature="16768:17227" ph="INSERT INTO individual_data... " />
               </folding>
             </state>
           </provider>
@@ -137,6 +165,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sql</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -158,12 +191,13 @@
         <option value="$PROJECT_DIR$/local/get_locations.py" />
         <option value="$PROJECT_DIR$/local/configs/directory_config.py" />
         <option value="$PROJECT_DIR$/local/configs/server_config.py" />
-        <option value="$PROJECT_DIR$/local/preprocess_exploration.py" />
         <option value="$PROJECT_DIR$/local/preprocess_sensor.py" />
         <option value="$PROJECT_DIR$/local/copy_files_sensor.py" />
         <option value="$PROJECT_DIR$/local/copy_files_exploration.py" />
         <option value="$PROJECT_DIR$/local/get_locations_sensor.py" />
         <option value="$PROJECT_DIR$/local/get_locations_exploration.py" />
+        <option value="$PROJECT_DIR$/local/preprocess_exploration.py" />
+        <option value="$PROJECT_DIR$/local/search_log_analysis_sigir2017.py" />
       </list>
     </option>
   </component>
@@ -174,10 +208,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="x" value="1290" />
+    <option name="y" value="27" />
+    <option name="width" value="1896" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -217,7 +251,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -230,6 +296,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -239,25 +306,7 @@
       <recent name="$PROJECT_DIR$/local" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.get_locations_exploration">
-    <configuration default="false" name="preprocess_sensor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/preprocess_sensor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.search_log_analysis_sigir2017">
     <configuration default="false" name="copy_files_sensor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -330,6 +379,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="search_log_analysis_sigir2017" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/search_log_analysis_dyad.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -348,6 +415,12 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -539,19 +612,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.preprocess_sensor" />
-      <item index="1" class="java.lang.String" itemvalue="Python.copy_files_sensor" />
-      <item index="2" class="java.lang.String" itemvalue="Python.copy_files_exploration" />
-      <item index="3" class="java.lang.String" itemvalue="Python.get_locations_sensor" />
-      <item index="4" class="java.lang.String" itemvalue="Python.get_locations_exploration" />
+      <item index="0" class="java.lang.String" itemvalue="Python.copy_files_sensor" />
+      <item index="1" class="java.lang.String" itemvalue="Python.copy_files_exploration" />
+      <item index="2" class="java.lang.String" itemvalue="Python.get_locations_sensor" />
+      <item index="3" class="java.lang.String" itemvalue="Python.get_locations_exploration" />
+      <item index="4" class="java.lang.String" itemvalue="Python.search_log_analysis_sigir2017" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.get_locations_exploration" />
-        <item index="1" class="java.lang.String" itemvalue="Python.copy_files_exploration" />
-        <item index="2" class="java.lang.String" itemvalue="Python.get_locations_sensor" />
-        <item index="3" class="java.lang.String" itemvalue="Python.copy_files_sensor" />
-        <item index="4" class="java.lang.String" itemvalue="Python.preprocess_sensor" />
+        <item index="0" class="java.lang.String" itemvalue="Python.search_log_analysis_sigir2017" />
+        <item index="1" class="java.lang.String" itemvalue="Python.get_locations_exploration" />
+        <item index="2" class="java.lang.String" itemvalue="Python.copy_files_exploration" />
+        <item index="3" class="java.lang.String" itemvalue="Python.get_locations_sensor" />
+        <item index="4" class="java.lang.String" itemvalue="Python.copy_files_sensor" />
       </list>
     </recent_temporary>
   </component>
@@ -594,27 +667,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="1290" y="27" width="1896" height="1027" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20886075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6143725" sideWeight="0.51373184" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3117409" sideWeight="0.5140625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46033403" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42066807" sideWeight="0.4859375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61440676" sideWeight="0.48626816" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3825911" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,7 +721,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -658,20 +731,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/server_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/configs/directory_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/get_locations_sensor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -706,9 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="42" column="57" lean-forward="false" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
-          <folding>
-            <element signature="e#93#114#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -797,9 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-          <folding>
-            <element signature="e#93#114#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -876,19 +929,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/study_2015/fitbit_data_management.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -941,19 +982,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/study_2015/fitbit_data_management.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -982,34 +1011,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study_2015/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/study_2015/README.md" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1064,37 +1070,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/local/copy_files_sensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="110" lean-forward="false" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/local/preprocess_exploration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="47" column="93" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="93" />
+        <state relative-caret-position="0">
+          <caret line="39" column="63" lean-forward="false" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
           <folding>
-            <marker date="1480088468000" expanded="true" signature="641:701" ph="SELECT devic... data" />
+            <marker date="1484073300000" expanded="true" signature="600:660" ph="SELECT devic... data" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/copy_files_exploration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.4/site-packages/sqlalchemy/engine/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="1115" column="0" lean-forward="false" selection-start-line="1115" selection-start-column="0" selection-end-line="1115" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/preprocess_sensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+        <state relative-caret-position="294">
+          <caret line="64" column="89" lean-forward="false" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
+          <folding>
+            <marker date="1480092273000" expanded="true" signature="641:701" ph="SELECT devic... data" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/copy_files_sensor.py">
+    <entry file="file://$PROJECT_DIR$/local/get_locations_exploration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="110" lean-forward="false" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
+        <state relative-caret-position="285">
+          <caret line="183" column="16" lean-forward="false" selection-start-line="183" selection-start-column="16" selection-end-line="189" selection-end-column="35" />
           <folding>
-            <element signature="e#93#114#0" expanded="true" />
+            <marker date="1481473546000" expanded="true" signature="739:799" ph="SELECT devic... data" />
+            <marker date="1481473546000" expanded="true" signature="3010:3081" ph="SELECT devic... " />
+            <marker date="1481473546000" expanded="true" signature="5203:5267" ph="SELECT userI... recruits" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/get_locations_sensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="67" column="70" lean-forward="false" selection-start-line="67" selection-start-column="70" selection-end-line="67" selection-end-column="70" />
+        <state relative-caret-position="75">
+          <caret line="169" column="12" lean-forward="true" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
           <folding>
             <element signature="e#41#52#0" expanded="true" />
             <marker date="1481472182000" expanded="true" signature="739:799" ph="SELECT devic... data" />
@@ -1121,22 +1154,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/copy_files_exploration.py">
+    <entry file="file://$PROJECT_DIR$/local/search_log_analysis_dyad.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/get_locations_exploration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="4515">
+          <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
           <folding>
-            <marker date="1481473546000" expanded="true" signature="739:799" ph="SELECT devic... data" />
-            <marker date="1481473546000" expanded="true" signature="3010:3081" ph="SELECT devic... " />
-            <marker date="1481473546000" expanded="true" signature="5203:5267" ph="SELECT userI... recruits" />
+            <element signature="e#41#55#0" expanded="true" />
+            <marker date="1484340053000" expanded="true" signature="7072:7104" ph="SELECT * FRO... final_participants" />
+            <marker date="1484340053000" expanded="true" signature="7527:7622" ph="SELECT userI... " />
+            <marker date="1484340053000" expanded="true" signature="7836:7878" ph="SELECT * FRO... queries" />
+            <marker date="1484340053000" expanded="true" signature="15694:15714" ph="DROP TABLE I... " />
+            <marker date="1484340053000" expanded="true" signature="15694:15730" ph="DROP TABLE I... " />
+            <marker date="1484340053000" expanded="true" signature="15768:15798" ph="CREATE TABLE... CREATE" />
+            <marker date="1484340053000" expanded="true" signature="15768:15804" ph="CREATE TABLE... CREATE" />
+            <marker date="1484340053000" expanded="true" signature="15768:15813" ph="CREATE TABLE... CREATE" />
+            <marker date="1484340053000" expanded="true" signature="15768:15831" ph="CREATE TABLE... CREATE" />
+            <marker date="1484340053000" expanded="true" signature="15768:15856" ph="CREATE TABLE... CREATE" />
+            <marker date="1484340053000" expanded="true" signature="15768:15870" ph="CREATE TABLE... CREATE" />
+            <marker date="1484340053000" expanded="true" signature="15768:15879" ph="CREATE TABLE... CREATE" />
+            <marker date="1484340053000" expanded="true" signature="15768:15908" ph="CREATE TABLE... CREATE" />
+            <marker date="1484340053000" expanded="true" signature="15768:15909" ph="CREATE TABLE... CREATE" />
+            <marker date="1484340053000" expanded="true" signature="15768:15910" ph="CREATE TABLE... individual_data" />
+            <marker date="1484340053000" expanded="true" signature="15991:16087" ph="INSERT INTO individual_data... " />
+            <marker date="1484340053000" expanded="true" signature="15991:16096" ph="INSERT INTO individual_data... " />
+            <marker date="1484340053000" expanded="true" signature="15991:16160" ph="INSERT INTO individual_data... " />
+            <marker date="1484340053000" expanded="true" signature="15991:16213" ph="INSERT INTO individual_data... " />
+            <marker date="1484340053000" expanded="true" signature="15991:16271" ph="INSERT INTO individual_data... " />
+            <marker date="1484340053000" expanded="true" signature="15991:16274" ph="INSERT INTO individual_data... " />
+            <marker date="1484340053000" expanded="true" signature="15991:16343" ph="INSERT INTO individual_data... " />
+            <marker date="1484340053000" expanded="true" signature="15991:16407" ph="INSERT INTO individual_data... " />
+            <marker date="1484340053000" expanded="true" signature="15991:16409" ph="INSERT INTO individual_data... " />
+            <marker date="1484340053000" expanded="true" signature="16466:16496" ph="DROP TABLE I... " />
+            <marker date="1484340053000" expanded="true" signature="16534:16685" ph="CREATE TABLE... dyad_data" />
+            <marker date="1484340053000" expanded="true" signature="16768:17227" ph="INSERT INTO individual_data... " />
           </folding>
         </state>
       </provider>
