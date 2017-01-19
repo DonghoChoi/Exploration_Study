@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88af48be-b1ce-4a79-8b05-26b714076809" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/search_log_analysis_dyad.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/comparison_analysis.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/preprocess_exploration.py" afterPath="$PROJECT_DIR$/local/preprocess_exploration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/gps_data_analysis.py" afterPath="$PROJECT_DIR$/local/gps_data_analysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/search_log_analysis_dyad.py" afterPath="$PROJECT_DIR$/local/search_log_analysis_dyad.py" />
     </list>
     <ignored path="Code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,17 +19,19 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Code$preprocess_sensor.coverage" NAME="preprocess_sensor Coverage Results" MODIFIED="1480092273757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
-    <SUITE FILE_PATH="coverage/Code$get_locations_exploration.coverage" NAME="get_locations_exploration Coverage Results" MODIFIED="1481476262066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1478842765428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$merge_db.coverage" NAME="merge_db Coverage Results" MODIFIED="1480083514716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
-    <SUITE FILE_PATH="coverage/Code$search_log_analysis_sigir2017.coverage" NAME="search_log_analysis_sigir2017 Coverage Results" MODIFIED="1484340053190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$get_locations_sensor.coverage" NAME="get_locations_sensor Coverage Results" MODIFIED="1481472182406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
-    <SUITE FILE_PATH="coverage/Code$test.coverage" NAME="test Coverage Results" MODIFIED="1478846163973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$comparison_analysis.coverage" NAME="comparison_analysis Coverage Results" MODIFIED="1484777803856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$copy_files_exploration.coverage" NAME="copy_files_exploration Coverage Results" MODIFIED="1481473546438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
-    <SUITE FILE_PATH="coverage/Code$config.coverage" NAME="config Coverage Results" MODIFIED="1478705059092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$preprocess_exploration.coverage" NAME="preprocess_exploration Coverage Results" MODIFIED="1480088468202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
-    <SUITE FILE_PATH="coverage/Code$copy_files_sensor.coverage" NAME="copy_files_sensor Coverage Results" MODIFIED="1481470776131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$copy_files.coverage" NAME="copy_files Coverage Results" MODIFIED="1480081351374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$get_locations_exploration.coverage" NAME="get_locations_exploration Coverage Results" MODIFIED="1481476262066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$search_log_analysis_sigir2017.coverage" NAME="search_log_analysis_sigir2017 Coverage Results" MODIFIED="1484636324564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$test.coverage" NAME="test Coverage Results" MODIFIED="1478846163973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$gps_data_analysis.coverage" NAME="gps_data_analysis Coverage Results" MODIFIED="1484777747866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$config.coverage" NAME="config Coverage Results" MODIFIED="1478705059092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$copy_files_sensor.coverage" NAME="copy_files_sensor Coverage Results" MODIFIED="1481470776131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -48,110 +50,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="preprocess_exploration.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/preprocess_exploration.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="39" column="63" lean-forward="false" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
-              <folding>
-                <marker date="1484073300000" expanded="true" signature="600:660" ph="SELECT devic... data" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_locations_sensor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/get_locations_sensor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="169" column="12" lean-forward="true" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
-              <folding>
-                <element signature="e#41#52#0" expanded="true" />
-                <marker date="1481472182000" expanded="true" signature="739:799" ph="SELECT devic... data" />
-                <marker date="1481472182000" expanded="true" signature="3087:3158" ph="SELECT * FRO... data" />
-                <marker date="1481472182000" expanded="true" signature="5280:5320" ph="SELECT userI... recruits" />
-                <marker date="1481472182000" expanded="true" signature="5280:5321" ph="SELECT userI... recruits" />
-                <marker date="1481472182000" expanded="true" signature="5280:5322" ph="SELECT userI... recruits" />
-                <marker date="1481472182000" expanded="true" signature="5280:5344" ph="SELECT userI... recruits" />
-                <marker date="1481472182000" expanded="true" signature="8073:8148" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8158" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8168" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8173" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8178" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8183" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8188" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8194" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8195" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8204" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8213" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8223" ph="INSERT INTO locations_all... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8265" ph="INSERT INTO all_locations... " />
-                <marker date="1481472182000" expanded="true" signature="8073:8266" ph="INSERT INTO locations_all... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_locations_exploration.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/get_locations_exploration.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="183" column="16" lean-forward="false" selection-start-line="183" selection-start-column="16" selection-end-line="189" selection-end-column="35" />
-              <folding>
-                <marker date="1481473546000" expanded="true" signature="739:799" ph="SELECT devic... data" />
-                <marker date="1481473546000" expanded="true" signature="3010:3081" ph="SELECT devic... " />
-                <marker date="1481473546000" expanded="true" signature="5203:5267" ph="SELECT userI... recruits" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preprocess_sensor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/preprocess_sensor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="64" column="89" lean-forward="false" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
-              <folding>
-                <marker date="1480092273000" expanded="true" signature="641:701" ph="SELECT devic... data" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="search_log_analysis_dyad.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/local/search_log_analysis_dyad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4515">
-              <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="253" column="103" lean-forward="true" selection-start-line="253" selection-start-column="103" selection-end-line="253" selection-end-column="103" />
               <folding>
                 <element signature="e#41#55#0" expanded="true" />
-                <marker date="1484340053000" expanded="true" signature="7072:7104" ph="SELECT * FRO... final_participants" />
-                <marker date="1484340053000" expanded="true" signature="7527:7622" ph="SELECT userI... " />
-                <marker date="1484340053000" expanded="true" signature="7836:7878" ph="SELECT * FRO... queries" />
-                <marker date="1484340053000" expanded="true" signature="15694:15714" ph="DROP TABLE I... " />
-                <marker date="1484340053000" expanded="true" signature="15694:15730" ph="DROP TABLE I... " />
-                <marker date="1484340053000" expanded="true" signature="15768:15798" ph="CREATE TABLE... CREATE" />
-                <marker date="1484340053000" expanded="true" signature="15768:15804" ph="CREATE TABLE... CREATE" />
-                <marker date="1484340053000" expanded="true" signature="15768:15813" ph="CREATE TABLE... CREATE" />
-                <marker date="1484340053000" expanded="true" signature="15768:15831" ph="CREATE TABLE... CREATE" />
-                <marker date="1484340053000" expanded="true" signature="15768:15856" ph="CREATE TABLE... CREATE" />
-                <marker date="1484340053000" expanded="true" signature="15768:15870" ph="CREATE TABLE... CREATE" />
-                <marker date="1484340053000" expanded="true" signature="15768:15879" ph="CREATE TABLE... CREATE" />
-                <marker date="1484340053000" expanded="true" signature="15768:15908" ph="CREATE TABLE... CREATE" />
-                <marker date="1484340053000" expanded="true" signature="15768:15909" ph="CREATE TABLE... CREATE" />
-                <marker date="1484340053000" expanded="true" signature="15768:15910" ph="CREATE TABLE... individual_data" />
-                <marker date="1484340053000" expanded="true" signature="15991:16087" ph="INSERT INTO individual_data... " />
-                <marker date="1484340053000" expanded="true" signature="15991:16096" ph="INSERT INTO individual_data... " />
-                <marker date="1484340053000" expanded="true" signature="15991:16160" ph="INSERT INTO individual_data... " />
-                <marker date="1484340053000" expanded="true" signature="15991:16213" ph="INSERT INTO individual_data... " />
-                <marker date="1484340053000" expanded="true" signature="15991:16271" ph="INSERT INTO individual_data... " />
-                <marker date="1484340053000" expanded="true" signature="15991:16274" ph="INSERT INTO individual_data... " />
-                <marker date="1484340053000" expanded="true" signature="15991:16343" ph="INSERT INTO individual_data... " />
-                <marker date="1484340053000" expanded="true" signature="15991:16407" ph="INSERT INTO individual_data... " />
-                <marker date="1484340053000" expanded="true" signature="15991:16409" ph="INSERT INTO individual_data... " />
-                <marker date="1484340053000" expanded="true" signature="16466:16496" ph="DROP TABLE I... " />
-                <marker date="1484340053000" expanded="true" signature="16534:16685" ph="CREATE TABLE... dyad_data" />
-                <marker date="1484340053000" expanded="true" signature="16768:17227" ph="INSERT INTO individual_data... " />
+                <marker date="1484604291000" expanded="true" signature="6986:7018" ph="SELECT * FRO... final_participants" />
+                <marker date="1484604291000" expanded="true" signature="7441:7536" ph="SELECT userI... " />
+                <marker date="1484604291000" expanded="true" signature="7750:7792" ph="SELECT * FRO... queries" />
+                <marker date="1484604291000" expanded="true" signature="16942:16962" ph="DROP TABLE I... " />
+                <marker date="1484604291000" expanded="true" signature="16942:16978" ph="DROP TABLE I... " />
+                <marker date="1484604291000" expanded="true" signature="17016:17046" ph="CREATE TABLE... CREATE" />
+                <marker date="1484604291000" expanded="true" signature="17016:17052" ph="CREATE TABLE... CREATE" />
+                <marker date="1484604291000" expanded="true" signature="17016:17061" ph="CREATE TABLE... CREATE" />
+                <marker date="1484604291000" expanded="true" signature="17016:17079" ph="CREATE TABLE... CREATE" />
+                <marker date="1484604291000" expanded="true" signature="17016:17104" ph="CREATE TABLE... CREATE" />
+                <marker date="1484604291000" expanded="true" signature="17016:17118" ph="CREATE TABLE... CREATE" />
+                <marker date="1484604291000" expanded="true" signature="17016:17127" ph="CREATE TABLE... CREATE" />
+                <marker date="1484604291000" expanded="true" signature="17016:17156" ph="CREATE TABLE... CREATE" />
+                <marker date="1484604291000" expanded="true" signature="17016:17157" ph="CREATE TABLE... CREATE" />
+                <marker date="1484604291000" expanded="true" signature="17016:17158" ph="CREATE TABLE... individual_data" />
+                <marker date="1484604291000" expanded="true" signature="17239:17335" ph="INSERT INTO individual_data... " />
+                <marker date="1484604291000" expanded="true" signature="17239:17344" ph="INSERT INTO individual_data... " />
+                <marker date="1484604291000" expanded="true" signature="17239:17408" ph="INSERT INTO individual_data... " />
+                <marker date="1484604291000" expanded="true" signature="17239:17461" ph="INSERT INTO individual_data... " />
+                <marker date="1484604291000" expanded="true" signature="17239:17519" ph="INSERT INTO individual_data... " />
+                <marker date="1484604291000" expanded="true" signature="17239:17522" ph="INSERT INTO individual_data... " />
+                <marker date="1484604291000" expanded="true" signature="17239:17591" ph="INSERT INTO individual_data... " />
+                <marker date="1484604291000" expanded="true" signature="17239:17655" ph="INSERT INTO individual_data... " />
+                <marker date="1484604291000" expanded="true" signature="17239:17657" ph="INSERT INTO individual_data... " />
+                <marker date="1484604291000" expanded="true" signature="17714:17744" ph="DROP TABLE I... " />
+                <marker date="1484604291000" expanded="true" signature="17782:17933" ph="CREATE TABLE... dyad_data" />
+                <marker date="1484604291000" expanded="true" signature="18016:18271" ph="INSERT INTO dyad_data... " />
+                <marker date="1484604291000" expanded="true" signature="18016:18475" ph="INSERT INTO individual_data... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gps_data_analysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/gps_data_analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="124" column="44" lean-forward="false" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="44" />
+              <folding>
+                <element signature="e#41#55#0" expanded="true" />
+                <marker date="1484777747000" expanded="true" signature="2777:2806" ph="SELECT * FRO... individual_data" />
+                <marker date="1484777747000" expanded="true" signature="2966:2998" ph="SELECT * FRO... final_participants" />
+                <marker date="1484777747000" expanded="true" signature="3182:3274" ph="SELECT userI... locations_all" />
+                <marker date="1484777747000" expanded="true" signature="12044:12270" ph="INSERT INTO mobility_data... " />
+                <marker date="1484777747000" expanded="true" signature="12044:12406" ph="INSERT INTO mobility_data... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comparison_analysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/comparison_analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+              <folding>
+                <element signature="e#41#55#0" expanded="true" />
+                <marker date="1484820794000" expanded="true" signature="3118:3147" ph="SELECT * FRO... individual_data" />
+                <marker date="1484820794000" expanded="true" signature="3253:3276" ph="SELECT * FRO... dyad_data" />
+                <marker date="1484820794000" expanded="true" signature="3654:3668" ph="SELECT * FRO... final_participants" />
+                <marker date="1484820794000" expanded="true" signature="3654:3681" ph="SELECT * FRO... mobility_data" />
               </folding>
             </state>
           </provider>
@@ -169,6 +135,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>sql</find>
+      <find>drop</find>
+      <find>set_value</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,6 +166,9 @@
         <option value="$PROJECT_DIR$/local/get_locations_exploration.py" />
         <option value="$PROJECT_DIR$/local/preprocess_exploration.py" />
         <option value="$PROJECT_DIR$/local/search_log_analysis_sigir2017.py" />
+        <option value="$PROJECT_DIR$/local/search_log_analysis_dyad.py" />
+        <option value="$PROJECT_DIR$/local/gps_data_analysis.py" />
+        <option value="$PROJECT_DIR$/local/comparison_analysis.py" />
       </list>
     </option>
   </component>
@@ -306,25 +277,7 @@
       <recent name="$PROJECT_DIR$/local" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.search_log_analysis_sigir2017">
-    <configuration default="false" name="copy_files_sensor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/copy_files_sensor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.comparison_analysis">
     <configuration default="false" name="copy_files_exploration" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -339,24 +292,6 @@
       <module name="Code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/copy_files_exploration.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="get_locations_sensor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/get_locations_sensor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -393,6 +328,42 @@
       <module name="Code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/search_log_analysis_dyad.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="gps_data_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/gps_data_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="comparison_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/comparison_analysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -612,19 +583,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.copy_files_sensor" />
-      <item index="1" class="java.lang.String" itemvalue="Python.copy_files_exploration" />
-      <item index="2" class="java.lang.String" itemvalue="Python.get_locations_sensor" />
-      <item index="3" class="java.lang.String" itemvalue="Python.get_locations_exploration" />
-      <item index="4" class="java.lang.String" itemvalue="Python.search_log_analysis_sigir2017" />
+      <item index="0" class="java.lang.String" itemvalue="Python.copy_files_exploration" />
+      <item index="1" class="java.lang.String" itemvalue="Python.get_locations_exploration" />
+      <item index="2" class="java.lang.String" itemvalue="Python.search_log_analysis_sigir2017" />
+      <item index="3" class="java.lang.String" itemvalue="Python.gps_data_analysis" />
+      <item index="4" class="java.lang.String" itemvalue="Python.comparison_analysis" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.search_log_analysis_sigir2017" />
-        <item index="1" class="java.lang.String" itemvalue="Python.get_locations_exploration" />
-        <item index="2" class="java.lang.String" itemvalue="Python.copy_files_exploration" />
-        <item index="3" class="java.lang.String" itemvalue="Python.get_locations_sensor" />
-        <item index="4" class="java.lang.String" itemvalue="Python.copy_files_sensor" />
+        <item index="0" class="java.lang.String" itemvalue="Python.comparison_analysis" />
+        <item index="1" class="java.lang.String" itemvalue="Python.gps_data_analysis" />
+        <item index="2" class="java.lang.String" itemvalue="Python.search_log_analysis_sigir2017" />
+        <item index="3" class="java.lang.String" itemvalue="Python.get_locations_exploration" />
+        <item index="4" class="java.lang.String" itemvalue="Python.copy_files_exploration" />
       </list>
     </recent_temporary>
   </component>
@@ -663,22 +634,29 @@
       <option name="project" value="LOCAL" />
       <updated>1479366051133</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="01/17/17 Updates">
+      <created>1484690536609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1484690536609</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1290" y="27" width="1896" height="1027" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20886075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20886075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3117409" sideWeight="0.5140625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.545929" sideWeight="0.5179325" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46033403" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41127348" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.545929" sideWeight="0.48206753" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42066807" sideWeight="0.4859375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -707,7 +685,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="11/14/2016" />
     <MESSAGE value="11/16/2016" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/16/2016" />
+    <MESSAGE value="01/17/17 Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="01/17/17 Updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -731,43 +710,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/local/get_locations_sensor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#52#0" expanded="true" />
-            <marker date="1481472182000" expanded="true" signature="739:799" ph="SELECT devic... data" />
-            <marker date="1481472182000" expanded="true" signature="3087:3158" ph="SELECT * FRO... data" />
-            <marker date="1481472182000" expanded="true" signature="5280:5320" ph="SELECT userI... recruits" />
-            <marker date="1481472182000" expanded="true" signature="5280:5321" ph="SELECT userI... recruits" />
-            <marker date="1481472182000" expanded="true" signature="5280:5322" ph="SELECT userI... recruits" />
-            <marker date="1481472182000" expanded="true" signature="5280:5344" ph="SELECT userI... recruits" />
-            <marker date="1481472182000" expanded="true" signature="8073:8148" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8158" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8168" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8173" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8178" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8183" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8188" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8194" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8195" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8204" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8213" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8223" ph="INSERT INTO locations_all... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8265" ph="INSERT INTO all_locations... " />
-            <marker date="1481472182000" expanded="true" signature="8073:8266" ph="INSERT INTO locations_all... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/copy_files_sensor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="42" column="57" lean-forward="false" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1127,7 +1069,7 @@
     <entry file="file://$PROJECT_DIR$/local/get_locations_sensor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="169" column="12" lean-forward="true" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
+          <caret line="169" column="12" lean-forward="false" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
           <folding>
             <element signature="e#41#52#0" expanded="true" />
             <marker date="1481472182000" expanded="true" signature="739:799" ph="SELECT devic... data" />
@@ -1154,39 +1096,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/search_log_analysis_dyad.py">
+    <entry file="file://$PROJECT_DIR$/local/gps_data_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4515">
-          <caret line="301" column="0" lean-forward="false" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+        <state relative-caret-position="192">
+          <caret line="124" column="44" lean-forward="false" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="44" />
           <folding>
             <element signature="e#41#55#0" expanded="true" />
-            <marker date="1484340053000" expanded="true" signature="7072:7104" ph="SELECT * FRO... final_participants" />
-            <marker date="1484340053000" expanded="true" signature="7527:7622" ph="SELECT userI... " />
-            <marker date="1484340053000" expanded="true" signature="7836:7878" ph="SELECT * FRO... queries" />
-            <marker date="1484340053000" expanded="true" signature="15694:15714" ph="DROP TABLE I... " />
-            <marker date="1484340053000" expanded="true" signature="15694:15730" ph="DROP TABLE I... " />
-            <marker date="1484340053000" expanded="true" signature="15768:15798" ph="CREATE TABLE... CREATE" />
-            <marker date="1484340053000" expanded="true" signature="15768:15804" ph="CREATE TABLE... CREATE" />
-            <marker date="1484340053000" expanded="true" signature="15768:15813" ph="CREATE TABLE... CREATE" />
-            <marker date="1484340053000" expanded="true" signature="15768:15831" ph="CREATE TABLE... CREATE" />
-            <marker date="1484340053000" expanded="true" signature="15768:15856" ph="CREATE TABLE... CREATE" />
-            <marker date="1484340053000" expanded="true" signature="15768:15870" ph="CREATE TABLE... CREATE" />
-            <marker date="1484340053000" expanded="true" signature="15768:15879" ph="CREATE TABLE... CREATE" />
-            <marker date="1484340053000" expanded="true" signature="15768:15908" ph="CREATE TABLE... CREATE" />
-            <marker date="1484340053000" expanded="true" signature="15768:15909" ph="CREATE TABLE... CREATE" />
-            <marker date="1484340053000" expanded="true" signature="15768:15910" ph="CREATE TABLE... individual_data" />
-            <marker date="1484340053000" expanded="true" signature="15991:16087" ph="INSERT INTO individual_data... " />
-            <marker date="1484340053000" expanded="true" signature="15991:16096" ph="INSERT INTO individual_data... " />
-            <marker date="1484340053000" expanded="true" signature="15991:16160" ph="INSERT INTO individual_data... " />
-            <marker date="1484340053000" expanded="true" signature="15991:16213" ph="INSERT INTO individual_data... " />
-            <marker date="1484340053000" expanded="true" signature="15991:16271" ph="INSERT INTO individual_data... " />
-            <marker date="1484340053000" expanded="true" signature="15991:16274" ph="INSERT INTO individual_data... " />
-            <marker date="1484340053000" expanded="true" signature="15991:16343" ph="INSERT INTO individual_data... " />
-            <marker date="1484340053000" expanded="true" signature="15991:16407" ph="INSERT INTO individual_data... " />
-            <marker date="1484340053000" expanded="true" signature="15991:16409" ph="INSERT INTO individual_data... " />
-            <marker date="1484340053000" expanded="true" signature="16466:16496" ph="DROP TABLE I... " />
-            <marker date="1484340053000" expanded="true" signature="16534:16685" ph="CREATE TABLE... dyad_data" />
-            <marker date="1484340053000" expanded="true" signature="16768:17227" ph="INSERT INTO individual_data... " />
+            <marker date="1484777747000" expanded="true" signature="2777:2806" ph="SELECT * FRO... individual_data" />
+            <marker date="1484777747000" expanded="true" signature="2966:2998" ph="SELECT * FRO... final_participants" />
+            <marker date="1484777747000" expanded="true" signature="3182:3274" ph="SELECT userI... locations_all" />
+            <marker date="1484777747000" expanded="true" signature="12044:12270" ph="INSERT INTO mobility_data... " />
+            <marker date="1484777747000" expanded="true" signature="12044:12406" ph="INSERT INTO mobility_data... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/comparison_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#55#0" expanded="true" />
+            <marker date="1484820794000" expanded="true" signature="3118:3147" ph="SELECT * FRO... individual_data" />
+            <marker date="1484820794000" expanded="true" signature="3253:3276" ph="SELECT * FRO... dyad_data" />
+            <marker date="1484820794000" expanded="true" signature="3654:3668" ph="SELECT * FRO... final_participants" />
+            <marker date="1484820794000" expanded="true" signature="3654:3681" ph="SELECT * FRO... mobility_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/search_log_analysis_dyad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="253" column="103" lean-forward="true" selection-start-line="253" selection-start-column="103" selection-end-line="253" selection-end-column="103" />
+          <folding>
+            <element signature="e#41#55#0" expanded="true" />
+            <marker date="1484604291000" expanded="true" signature="6986:7018" ph="SELECT * FRO... final_participants" />
+            <marker date="1484604291000" expanded="true" signature="7441:7536" ph="SELECT userI... " />
+            <marker date="1484604291000" expanded="true" signature="7750:7792" ph="SELECT * FRO... queries" />
+            <marker date="1484604291000" expanded="true" signature="16942:16962" ph="DROP TABLE I... " />
+            <marker date="1484604291000" expanded="true" signature="16942:16978" ph="DROP TABLE I... " />
+            <marker date="1484604291000" expanded="true" signature="17016:17046" ph="CREATE TABLE... CREATE" />
+            <marker date="1484604291000" expanded="true" signature="17016:17052" ph="CREATE TABLE... CREATE" />
+            <marker date="1484604291000" expanded="true" signature="17016:17061" ph="CREATE TABLE... CREATE" />
+            <marker date="1484604291000" expanded="true" signature="17016:17079" ph="CREATE TABLE... CREATE" />
+            <marker date="1484604291000" expanded="true" signature="17016:17104" ph="CREATE TABLE... CREATE" />
+            <marker date="1484604291000" expanded="true" signature="17016:17118" ph="CREATE TABLE... CREATE" />
+            <marker date="1484604291000" expanded="true" signature="17016:17127" ph="CREATE TABLE... CREATE" />
+            <marker date="1484604291000" expanded="true" signature="17016:17156" ph="CREATE TABLE... CREATE" />
+            <marker date="1484604291000" expanded="true" signature="17016:17157" ph="CREATE TABLE... CREATE" />
+            <marker date="1484604291000" expanded="true" signature="17016:17158" ph="CREATE TABLE... individual_data" />
+            <marker date="1484604291000" expanded="true" signature="17239:17335" ph="INSERT INTO individual_data... " />
+            <marker date="1484604291000" expanded="true" signature="17239:17344" ph="INSERT INTO individual_data... " />
+            <marker date="1484604291000" expanded="true" signature="17239:17408" ph="INSERT INTO individual_data... " />
+            <marker date="1484604291000" expanded="true" signature="17239:17461" ph="INSERT INTO individual_data... " />
+            <marker date="1484604291000" expanded="true" signature="17239:17519" ph="INSERT INTO individual_data... " />
+            <marker date="1484604291000" expanded="true" signature="17239:17522" ph="INSERT INTO individual_data... " />
+            <marker date="1484604291000" expanded="true" signature="17239:17591" ph="INSERT INTO individual_data... " />
+            <marker date="1484604291000" expanded="true" signature="17239:17655" ph="INSERT INTO individual_data... " />
+            <marker date="1484604291000" expanded="true" signature="17239:17657" ph="INSERT INTO individual_data... " />
+            <marker date="1484604291000" expanded="true" signature="17714:17744" ph="DROP TABLE I... " />
+            <marker date="1484604291000" expanded="true" signature="17782:17933" ph="CREATE TABLE... dyad_data" />
+            <marker date="1484604291000" expanded="true" signature="18016:18271" ph="INSERT INTO dyad_data... " />
+            <marker date="1484604291000" expanded="true" signature="18016:18475" ph="INSERT INTO individual_data... " />
           </folding>
         </state>
       </provider>

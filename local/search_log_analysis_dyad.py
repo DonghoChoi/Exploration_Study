@@ -10,9 +10,6 @@ import pandas as pd
 import numpy as np
 from sshtunnel import SSHTunnelForwarder # for SSH connection
 import pymysql.cursors # MySQL handling API
-from pandas.io import sql
-import mysql.connector
-from sqlalchemy import create_engine
 import sys
 sys.path.append("./configs/")
 import server_config # (1) info2_server (2) exploration_db
@@ -249,12 +246,19 @@ if __name__ == "__main__":
     for i in range(0,num_participants):
         #df_temp_individuals_data = pd.DataFrame(columns=('userID', 'Coverage', 'UniqueCoverage', 'RelevantCoverage', 'UniqueRelevantCoverage'))
         current_userID = participants_list[i]
+        '''
         df_individual_data.set_value(i,'userID', current_userID)
         df_individual_data.set_value(i,'Coverage',get_Coverage_Individual(current_userID))
         df_individual_data.set_value(i,'Coverage',get_Coverage_Individual(current_userID))
         df_individual_data.set_value(i,'UniqueCoverage',get_Unique_Coverage_Individual(current_userID))
         df_individual_data.set_value(i,'UsefulCoverage',get_Useful_Coverage_Individual(current_userID))
         df_individual_data.set_value(i,'UniqueUsefulCoverage', get_Unique_Useful_Coverage_Individual(current_userID))
+        '''
+        df_individual_data.iloc[i, df_individual_data.columns.get_loc('userID')] = current_userID
+        df_individual_data.iloc[i, df_individual_data.columns.get_loc('Coverage')] = get_Coverage_Individual(current_userID)
+        df_individual_data.iloc[i, df_individual_data.columns.get_loc('UniqueCoverage')] = get_Unique_Coverage_Individual(current_userID)
+        df_individual_data.iloc[i, df_individual_data.columns.get_loc('UsefulCoverage')] = get_Useful_Coverage_Individual(current_userID)
+        df_individual_data.iloc[i, df_individual_data.columns.get_loc('UniqueUsefulCoverage')] = get_Unique_Useful_Coverage_Individual(current_userID)
     print("##### Individual Data ######")
     print(df_individual_data)
 
@@ -264,12 +268,20 @@ if __name__ == "__main__":
         pair = participants_combinations[i]
         user_a = pair[0]
         user_b = pair[1]
+        '''
         df_dyad_data.set_value(i,'user_a',user_a)
         df_dyad_data.set_value(i,'user_b',user_b)
         df_dyad_data.set_value(i, 'Coverage', get_Coverage_Dyad(user_a, user_b))
         df_dyad_data.set_value(i, 'UniqueCoverage', get_Unique_Coverage_Dyad(user_a, user_b))
         df_dyad_data.set_value(i, 'UsefulCoverage', get_Useful_Coverage_Dyad(user_a, user_b))
         df_dyad_data.set_value(i, 'UniqueUsefulCoverage', get_Unique_Useful_Coverage_Dyad(user_a, user_b))
+        '''
+        df_dyad_data.iloc[i, df_dyad_data.columns.get_loc('user_a')] = user_a
+        df_dyad_data.iloc[i, df_dyad_data.columns.get_loc('user_b')] = user_b
+        df_dyad_data.iloc[i, df_dyad_data.columns.get_loc('Coverage')] = get_Coverage_Dyad(user_a, user_b)
+        df_dyad_data.iloc[i, df_dyad_data.columns.get_loc('UniqueCoverage')] = get_Unique_Coverage_Dyad(user_a, user_b)
+        df_dyad_data.iloc[i, df_dyad_data.columns.get_loc('UsefulCoverage')] = get_Useful_Coverage_Dyad(user_a, user_b)
+        df_dyad_data.iloc[i, df_dyad_data.columns.get_loc('UniqueUsefulCoverage')] = get_Unique_Useful_Coverage_Dyad(user_a, user_b)
     print("##### Dyad Data #####")
     print(df_dyad_data)
 

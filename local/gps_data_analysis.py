@@ -14,12 +14,14 @@ import pymysql.cursors # MySQL handling API
 from geopy.distance import vincenty
 import sys
 sys.path.append("./configs/")
+#sys.path.append("/Users/donghochoi/Documents/Work/Exploration_Study/Dissertation/Code/local/configs/")
 import server_config # (1) info2_server (2) exploration_db
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 datetimeFormat = '%Y-%m-%d %H:%M:%S'
 close_distance_cut = 40
-number_k = 4
+number_k = 2
 
 def is_location_close(location_a, location_b):
     #print("Distance:", vincenty(location_a, location_b).meters)
@@ -73,6 +75,10 @@ if __name__ == "__main__":
     cursor = connection.cursor()
     print("MySQL connection established.")
 
+    # Get individual data
+    df_individual_data = pd.read_sql('SELECT * FROM individual_data', con=connection)
+    print("Individual data READ")
+
     # Get the participants list from the table of 'final_participants'
     df_participants = pd.read_sql('SELECT * FROM final_participants', con=connection)
     print("Participants Table READ")
@@ -91,30 +97,30 @@ if __name__ == "__main__":
     ## POPULATE VISITS OF PARTICIPANTS
     df_visits = pd.DataFrame(columns=('userID','visit_start','visit_end','dwellTime','latitude','longitude'))
     df_mobility = pd.DataFrame(columns=('userID','visited_locations','k','gyration_all','gyration_k','s_k'))
-    #for i in range(0, num_participants):
-    for i in range(0,16):
+    for i in range(0, num_participants-1):
+    #for i in range(0,1):
         df_user_visits = pd.DataFrame(columns=('userID', 'visit_start', 'visit_end', 'dwellTime', 'latitude', 'longitude'))
         current_userID = participants_list[i]
         df_temp_locations = df_locations_all.loc[df_locations_all['userID'] == current_userID] # location list of a particular user
-        df_temp_locations = df_temp_locations.sort('timestamp')
+        df_temp_locations = df_temp_locations.sort_values(by='timestamp')
         current_location = (df_temp_locations.iloc[0]['latitude'],df_temp_locations.iloc[0]['longitude']) # the first line of the list
         visit_start = datetime.datetime.strptime(df_temp_locations.iloc[0]['date_time'],datetimeFormat)
-        print("visit_start:",visit_start)
+        #print("visit_start:",visit_start)
         visit_end = datetime.datetime.strptime(df_temp_locations.iloc[0]['date_time'], datetimeFormat)
-        print("visit_end:",visit_end)
+        #print("visit_end:",visit_end)
         for j in range(1,len(df_temp_locations)-1):
             if (visit_start + datetime.timedelta(minutes=55) >  datetime.datetime.strptime(df_temp_locations.iloc[j]['date_time'], datetimeFormat)): # when time interval until next record is too small..
-                print("too close")
+                #print("too close")
                 continue
             else:
                 temp_location = (df_temp_locations.iloc[j]['latitude'],df_temp_locations.iloc[j]['longitude'])
-                print("distance:",vincenty(current_location, temp_location).meters)
+                #print("distance:",vincenty(current_location, temp_location).meters)
                 if (vincenty(current_location, temp_location).meters <= close_distance_cut): # When seen the user stays nearby
-                    print("SAME LOCATION")
+                    #print("SAME LOCATION")
                     visit_end = datetime.datetime.strptime(df_temp_locations.iloc[j]['date_time'],datetimeFormat)
-                    print("visit_end update:",visit_end)
+                    #print("visit_end update:",visit_end)
                 else:
-                    print("MOVED TO NEW LOCATION")
+                    #print("MOVED TO NEW LOCATION")
                     df_temp_visits = pd.DataFrame(columns=('userID', 'visit_start', 'visit_end', 'dwellTime', 'latitude', 'longitude'))
                     df_temp_visits.set_value(0,'userID', current_userID)
                     df_temp_visits.set_value(0,'visit_start', visit_start)
@@ -131,7 +137,6 @@ if __name__ == "__main__":
         #print(df_user_visits)
 
         df_user_location_list = pd.DataFrame(columns=('userID','locationID','latitude','longitude','visit_times','spent_time'))
-        #df_user_locations_history = pd.DataFrame(columns=('userID','locationID','latitude','longitude','visit_times','spent_time'))
 
         df_temp_location = pd.DataFrame(columns=('userID', 'locationID', 'latitude', 'longitude'))
         df_temp_location.set_value(0, 'userID', current_userID)
@@ -147,7 +152,7 @@ if __name__ == "__main__":
             same_location = find_location(current_location,df_user_location_list)
             #print("value of same location:",same_location)
             if (same_location == -1): # if there is no place close to the current place
-                print("same_location = -1")
+                #print("same_location = -1")
                 df_temp_location = pd.DataFrame(columns=('userID','locationID','latitude','longitude'))
                 df_temp_location.set_value(0, 'userID', current_userID)
                 df_temp_location.set_value(0, 'locationID', len(df_user_location_list))
@@ -158,14 +163,12 @@ if __name__ == "__main__":
                 df_user_location_list = df_user_location_list.append(df_temp_location)
 
             else: # when current location can be perceived as the found 'same location'
-                print("same_location = :",same_location)
+                #print("same_location = :",same_location)
                 val_visit_times = df_user_location_list.iloc[same_location]['visit_times']
                 val_spent_time = df_user_location_list.iloc[same_location]['spent_time']
-                print("previous visit_times of locationID {0}: {1} becomes to {2}".format(same_location, val_visit_times, val_visit_times + 1))
+                #print("previous visit_times of locationID {0}: {1} becomes to {2}".format(same_location, val_visit_times, val_visit_times + 1))
                 df_user_location_list.iloc[same_location, df_user_location_list.columns.get_loc('visit_times')]= val_visit_times + 1
                 df_user_location_list.iloc[same_location, df_user_location_list.columns.get_loc('spent_time')] = val_spent_time + df_user_visits.iloc[k]['dwellTime']
-                #df_user_location_list.set_value(same_location, 'visit_times', val_visit_times + 1)
-                #df_user_location_list.set_value(same_location, 'spent_time', val_spent_time + df_user_visits.iloc[k]['dwellTime'])
 
         #print(df_user_location_list)
 
@@ -183,6 +186,7 @@ if __name__ == "__main__":
         print("gyration_sum of user {0}: {1}".format(current_userID, gyration_sum))
 
         # Calculating the total of radius of gyration of the k-th most frequented locations
+        #number_k = (len(df_user_location_list))//3
         df_user_location_list_k = df_user_location_list[:number_k]
         print("len(df_user_location_list_k) = ",len(df_user_location_list_k))
         center_of_mass_k = get_center_of_mass(df_user_location_list_k)
@@ -201,7 +205,7 @@ if __name__ == "__main__":
 
         print("s_k of user %i = %f" % (current_userID, s_k_ratio))
 
-        print(df_user_location_list)
+        #print(df_user_location_list)
 
         series_user_mobility = pd.Series([current_userID,len(df_user_location_list), number_k, gyration_sum, gyration_sum_k, s_k_ratio], index=['userID','visited_locations','k','gyration_all','gyration_k','s_k'])
         df_mobility = df_mobility.append(series_user_mobility,ignore_index=True)
@@ -209,8 +213,11 @@ if __name__ == "__main__":
     #print(df_visits)
     print(df_mobility)
 
-    plt.scatter(df_mobility['gyration_all'],df_mobility['gyration_k'])
-    plt.show()
+    # MOBILITY DATA INTO SERVER
+    for i in range(0, len(df_mobility)):
+        sql = "INSERT INTO mobility_data (userID,visited_locations,k,gyration_all,gyration_k,s_k) VALUES (" + str(df_mobility.iloc[i]['userID']) + "," + str(df_mobility.iloc[i]['visited_locations']) + "," + str(df_mobility.iloc[i]['k']) + "," + str(df_mobility.iloc[i]['gyration_all']) + "," + str(df_mobility.iloc[i]['gyration_k']) + "," + str(df_mobility.iloc[i]['s_k']) + ");"
+        cursor.execute(sql)
 
+    server.stop()
 
     print("End")
