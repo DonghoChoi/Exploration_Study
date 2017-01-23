@@ -8,3 +8,5 @@ Repository for Exploration Study Project
 3. Search Task Data 
 
 
+- gps_data_analysis.py: read the gps data to populate the location list as well as s_k ratio or gyration
+- gps_to_location_list.py: read the gps data and figure the location list of each participant, putting them into the mysql server with variables of 'userID','locationID','latitude','longitude','visit_times','spent_time','routine'.
