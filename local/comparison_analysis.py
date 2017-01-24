@@ -13,6 +13,7 @@ import pymysql.cursors # MySQL handling API
 from geopy.distance import vincenty
 import sys
 sys.path.append("./configs/")
+sys.path.append("/Users/donghochoi/Documents/Work/Exploration_Study/Dissertation/Code/local/configs/")
 import server_config # (1) info2_server (2) exploration_db
 import matplotlib.pyplot as plt
 from pylab import plot, show, savefig, xlim, figure, hold, ylim, legend, boxplot, setp, axes
