@@ -71,7 +71,7 @@ if __name__ == "__main__":
             var_L = var_L + var_p_j
             print("val_L = ",var_L)
 
-        sql = "INSERT INTO user_online_diversity (userID,total_domains,diversity,loyalty) VALUES (" + str(
+        sql = "INSERT INTO user_online_diversity (userID,total_domains,online_diversity,online_loyalty) VALUES (" + str(
                 current_userID) + "," + str(user_total_pages) + "," + str(
                 var_D) + "," + str(var_L) + ");"
         print(sql)

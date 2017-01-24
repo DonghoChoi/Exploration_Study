@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88af48be-b1ce-4a79-8b05-26b714076809" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/calculate_location_diversity.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/calculate_online_diversity.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/comparison_analysis_01192017.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/gps_to_location_list.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/search_log_to_page_list.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/comparison_analysis.py" afterPath="$PROJECT_DIR$/local/comparison_analysis.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/gps_data_analysis.py" afterPath="$PROJECT_DIR$/local/gps_data_analysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/calculate_online_diversity.py" afterPath="$PROJECT_DIR$/local/calculate_online_diversity.py" />
     </list>
     <ignored path="Code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,134 +52,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="search_log_analysis_dyad.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/search_log_analysis_dyad.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3840">
-              <caret line="256" column="0" lean-forward="true" selection-start-line="256" selection-start-column="0" selection-end-line="260" selection-end-column="150" />
-              <folding>
-                <element signature="e#41#55#0" expanded="true" />
-                <marker date="1484604291000" expanded="true" signature="6986:7018" ph="SELECT * FRO... final_participants" />
-                <marker date="1484604291000" expanded="true" signature="7441:7536" ph="SELECT userI... " />
-                <marker date="1484604291000" expanded="true" signature="7750:7792" ph="SELECT * FRO... queries" />
-                <marker date="1484604291000" expanded="true" signature="16942:16962" ph="DROP TABLE I... " />
-                <marker date="1484604291000" expanded="true" signature="16942:16978" ph="DROP TABLE I... " />
-                <marker date="1484604291000" expanded="true" signature="17016:17046" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17052" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17061" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17079" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17104" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17118" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17127" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17156" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17157" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17158" ph="CREATE TABLE... individual_data" />
-                <marker date="1484604291000" expanded="true" signature="17239:17335" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17344" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17408" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17461" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17519" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17522" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17591" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17655" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17657" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17714:17744" ph="DROP TABLE I... " />
-                <marker date="1484604291000" expanded="true" signature="17782:17933" ph="CREATE TABLE... dyad_data" />
-                <marker date="1484604291000" expanded="true" signature="18016:18271" ph="INSERT INTO dyad_data... " />
-                <marker date="1484604291000" expanded="true" signature="18016:18475" ph="INSERT INTO individual_data... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_log_to_page_list.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/search_log_to_page_list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="175" column="62" lean-forward="false" selection-start-line="175" selection-start-column="62" selection-end-line="175" selection-end-column="62" />
-              <folding>
-                <element signature="e#41#55#0" expanded="true" />
-                <marker date="1485270189000" expanded="true" signature="1955:2019" ph="SELECT userI... pages_all" />
-                <marker date="1485270189000" expanded="true" signature="2069:2133" ph="SELECT userI... pages_test" />
-                <marker date="1485270189000" expanded="true" signature="2424:2456" ph="SELECT * FRO... final_participants" />
-                <marker date="1485270189000" expanded="true" signature="9411:9903" ph="INSERT INTO user_pages_visit_list... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gps_data_analysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/gps_data_analysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#41#55#0" expanded="true" />
-                <marker date="1485269933000" expanded="true" signature="2766:2795" ph="SELECT * FRO... individual_data" />
-                <marker date="1485269933000" expanded="true" signature="2955:2987" ph="SELECT * FRO... final_participants" />
-                <marker date="1485269933000" expanded="true" signature="3171:3263" ph="SELECT userI... locations_all" />
-                <marker date="1485269933000" expanded="true" signature="12177:12403" ph="INSERT INTO mobility_data... " />
-                <marker date="1485269933000" expanded="true" signature="12177:12539" ph="INSERT INTO mobility_data... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gps_to_location_list.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/gps_to_location_list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-771">
-              <caret line="97" column="4" lean-forward="false" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
-              <folding>
-                <element signature="e#41#55#0" expanded="true" />
-                <marker date="1485276455000" expanded="true" signature="2764:2793" ph="SELECT * FRO... individual_data" />
-                <marker date="1485276455000" expanded="true" signature="2953:2985" ph="SELECT * FRO... final_participants" />
-                <marker date="1485276455000" expanded="true" signature="3169:3261" ph="SELECT userI... " />
-                <marker date="1485276455000" expanded="true" signature="9762:10193" ph="INSERT INTO user_location_list... " />
-                <marker date="1485276455000" expanded="true" signature="9762:10268" ph="INSERT INTO mobility_data... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calculate_location_diversity.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/calculate_location_diversity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="76" selection-end-column="27" />
-              <folding>
-                <element signature="e#41#52#0" expanded="true" />
-                <marker date="1485277050000" expanded="true" signature="1260:1292" ph="SELECT * FRO... final_participants" />
-                <marker date="1485277050000" expanded="true" signature="1390:1422" ph="SELECT * FRO... user_location_list" />
-                <marker date="1485277050000" expanded="true" signature="2959:3161" ph="INSERT INTO user_location_diversity... " />
-                <marker date="1485277050000" expanded="true" signature="2959:3180" ph="INSERT INTO user_location_diversity... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calculate_online_diversity.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/local/calculate_online_diversity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="75" column="48" lean-forward="true" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
-              <folding>
-                <element signature="e#41#52#0" expanded="true" />
-                <marker date="1485277273000" expanded="true" signature="1260:1292" ph="SELECT * FRO... final_participants" />
-                <marker date="1485277273000" expanded="true" signature="1393:1428" ph="SELECT * FRO... user_pages_visit_list" />
-                <marker date="1485277273000" expanded="true" signature="2870:3083" ph="INSERT INTO user_online_diversity... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="comparison_analysis.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local/comparison_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="200" column="71" lean-forward="true" selection-start-line="200" selection-start-column="71" selection-end-line="200" selection-end-column="71" />
+            <state relative-caret-position="150">
+              <caret line="10" column="61" lean-forward="true" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
               <folding>
-                <element signature="e#41#55#0" expanded="true" />
                 <marker date="1484861645000" expanded="true" signature="3221:3250" ph="SELECT * FRO... individual_data" />
                 <marker date="1484861645000" expanded="true" signature="3356:3379" ph="SELECT * FRO... dyad_data" />
                 <marker date="1484861645000" expanded="true" signature="3757:3771" ph="SELECT * FRO... final_participants" />
@@ -198,7 +70,7 @@
       <file leaf-file-name="comparison_analysis_01192017.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local/comparison_analysis_01192017.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3600">
+            <state relative-caret-position="1404">
               <caret line="240" column="28" lean-forward="true" selection-start-line="240" selection-start-column="28" selection-end-line="240" selection-end-column="28" />
               <folding>
                 <element signature="e#41#55#0" expanded="true" />
@@ -207,6 +79,19 @@
                 <marker date="1484946065000" expanded="true" signature="4281:4308" ph="SELECT * FRO... mobility_data" />
                 <marker date="1484946065000" expanded="true" signature="4281:4325" ph="SELECT * FRO... mobility_data" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -261,8 +146,8 @@
         <option value="$PROJECT_DIR$/local/gps_data_analysis.py" />
         <option value="$PROJECT_DIR$/local/search_log_to_page_list.py" />
         <option value="$PROJECT_DIR$/local/gps_to_location_list.py" />
-        <option value="$PROJECT_DIR$/local/calculate_location_diversity.py" />
         <option value="$PROJECT_DIR$/local/calculate_online_diversity.py" />
+        <option value="$PROJECT_DIR$/local/calculate_location_diversity.py" />
       </list>
     </option>
   </component>
@@ -743,9 +628,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.545929" sideWeight="0.5179325" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1022,13 +907,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/study_2015/README.md" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1163,40 +1041,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/comparison_analysis.py">
+    <entry file="file://$PROJECT_DIR$/local/gps_to_location_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="200" column="71" lean-forward="true" selection-start-line="200" selection-start-column="71" selection-end-line="200" selection-end-column="71" />
+        <state relative-caret-position="-693">
+          <caret line="97" column="4" lean-forward="false" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
           <folding>
             <element signature="e#41#55#0" expanded="true" />
-            <marker date="1484861645000" expanded="true" signature="3221:3250" ph="SELECT * FRO... individual_data" />
-            <marker date="1484861645000" expanded="true" signature="3356:3379" ph="SELECT * FRO... dyad_data" />
-            <marker date="1484861645000" expanded="true" signature="3757:3771" ph="SELECT * FRO... final_participants" />
-            <marker date="1484861645000" expanded="true" signature="3757:3784" ph="SELECT * FRO... mobility_data" />
+            <marker date="1485276455000" expanded="true" signature="2764:2793" ph="SELECT * FRO... individual_data" />
+            <marker date="1485276455000" expanded="true" signature="2953:2985" ph="SELECT * FRO... final_participants" />
+            <marker date="1485276455000" expanded="true" signature="3169:3261" ph="SELECT userI... " />
+            <marker date="1485276455000" expanded="true" signature="9762:10193" ph="INSERT INTO user_location_list... " />
+            <marker date="1485276455000" expanded="true" signature="9762:10268" ph="INSERT INTO mobility_data... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/comparison_analysis_01192017.py">
+    <entry file="file://$PROJECT_DIR$/local/gps_data_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3600">
-          <caret line="240" column="28" lean-forward="true" selection-start-line="240" selection-start-column="28" selection-end-line="240" selection-end-column="28" />
+        <state relative-caret-position="225">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#41#55#0" expanded="true" />
-            <marker date="1484946065000" expanded="true" signature="3745:3774" ph="SELECT * FRO... individual_data" />
-            <marker date="1484946065000" expanded="true" signature="3880:3903" ph="SELECT * FRO... dyad_data" />
-            <marker date="1484946065000" expanded="true" signature="4281:4308" ph="SELECT * FRO... mobility_data" />
-            <marker date="1484946065000" expanded="true" signature="4281:4325" ph="SELECT * FRO... mobility_data" />
+            <marker date="1485269933000" expanded="true" signature="2766:2795" ph="SELECT * FRO... individual_data" />
+            <marker date="1485269933000" expanded="true" signature="2955:2987" ph="SELECT * FRO... final_participants" />
+            <marker date="1485269933000" expanded="true" signature="3171:3263" ph="SELECT userI... locations_all" />
+            <marker date="1485269933000" expanded="true" signature="12177:12403" ph="INSERT INTO mobility_data... " />
+            <marker date="1485269933000" expanded="true" signature="12177:12539" ph="INSERT INTO mobility_data... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/search_log_to_page_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2424">
+          <caret line="175" column="62" lean-forward="false" selection-start-line="175" selection-start-column="62" selection-end-line="175" selection-end-column="62" />
+          <folding>
+            <element signature="e#41#55#0" expanded="true" />
+            <marker date="1485270189000" expanded="true" signature="1955:2019" ph="SELECT userI... pages_all" />
+            <marker date="1485270189000" expanded="true" signature="2069:2133" ph="SELECT userI... pages_test" />
+            <marker date="1485270189000" expanded="true" signature="2424:2456" ph="SELECT * FRO... final_participants" />
+            <marker date="1485270189000" expanded="true" signature="9411:9903" ph="INSERT INTO user_pages_visit_list... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/calculate_online_diversity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="73" column="95" lean-forward="false" selection-start-line="73" selection-start-column="95" selection-end-line="73" selection-end-column="95" />
+          <folding>
+            <element signature="e#41#52#0" expanded="true" />
+            <marker date="1485281049000" expanded="true" signature="1260:1292" ph="SELECT * FRO... final_participants" />
+            <marker date="1485281049000" expanded="true" signature="1393:1428" ph="SELECT * FRO... user_pages_visit_list" />
+            <marker date="1485281049000" expanded="true" signature="2870:3097" ph="INSERT INTO user_online_diversity... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/calculate_location_diversity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="72" column="103" lean-forward="false" selection-start-line="72" selection-start-column="103" selection-end-line="72" selection-end-column="103" />
+          <folding>
+            <element signature="e#41#52#0" expanded="true" />
+            <marker date="1485281049000" expanded="true" signature="1260:1292" ph="SELECT * FRO... final_participants" />
+            <marker date="1485281049000" expanded="true" signature="1390:1422" ph="SELECT * FRO... user_location_list" />
+            <marker date="1485281049000" expanded="true" signature="2959:3179" ph="INSERT INTO user_location_diversity... " />
+            <marker date="1485281049000" expanded="true" signature="2959:3198" ph="INSERT INTO user_location_diversity... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/search_log_analysis_dyad.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="256" column="0" lean-forward="true" selection-start-line="256" selection-start-column="0" selection-end-line="260" selection-end-column="150" />
+        <state relative-caret-position="75">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
           <folding>
-            <element signature="e#41#55#0" expanded="true" />
             <marker date="1484604291000" expanded="true" signature="6986:7018" ph="SELECT * FRO... final_participants" />
             <marker date="1484604291000" expanded="true" signature="7441:7536" ph="SELECT userI... " />
             <marker date="1484604291000" expanded="true" signature="7750:7792" ph="SELECT * FRO... queries" />
@@ -1229,74 +1149,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/gps_data_analysis.py">
+    <entry file="file://$PROJECT_DIR$/local/comparison_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="61" lean-forward="true" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+          <folding>
+            <marker date="1484861645000" expanded="true" signature="3221:3250" ph="SELECT * FRO... individual_data" />
+            <marker date="1484861645000" expanded="true" signature="3356:3379" ph="SELECT * FRO... dyad_data" />
+            <marker date="1484861645000" expanded="true" signature="3757:3771" ph="SELECT * FRO... final_participants" />
+            <marker date="1484861645000" expanded="true" signature="3757:3784" ph="SELECT * FRO... mobility_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/comparison_analysis_01192017.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="240" column="28" lean-forward="true" selection-start-line="240" selection-start-column="28" selection-end-line="240" selection-end-column="28" />
           <folding>
             <element signature="e#41#55#0" expanded="true" />
-            <marker date="1485269933000" expanded="true" signature="2766:2795" ph="SELECT * FRO... individual_data" />
-            <marker date="1485269933000" expanded="true" signature="2955:2987" ph="SELECT * FRO... final_participants" />
-            <marker date="1485269933000" expanded="true" signature="3171:3263" ph="SELECT userI... locations_all" />
-            <marker date="1485269933000" expanded="true" signature="12177:12403" ph="INSERT INTO mobility_data... " />
-            <marker date="1485269933000" expanded="true" signature="12177:12539" ph="INSERT INTO mobility_data... " />
+            <marker date="1484946065000" expanded="true" signature="3745:3774" ph="SELECT * FRO... individual_data" />
+            <marker date="1484946065000" expanded="true" signature="3880:3903" ph="SELECT * FRO... dyad_data" />
+            <marker date="1484946065000" expanded="true" signature="4281:4308" ph="SELECT * FRO... mobility_data" />
+            <marker date="1484946065000" expanded="true" signature="4281:4325" ph="SELECT * FRO... mobility_data" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/search_log_to_page_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="175" column="62" lean-forward="false" selection-start-line="175" selection-start-column="62" selection-end-line="175" selection-end-column="62" />
-          <folding>
-            <element signature="e#41#55#0" expanded="true" />
-            <marker date="1485270189000" expanded="true" signature="1955:2019" ph="SELECT userI... pages_all" />
-            <marker date="1485270189000" expanded="true" signature="2069:2133" ph="SELECT userI... pages_test" />
-            <marker date="1485270189000" expanded="true" signature="2424:2456" ph="SELECT * FRO... final_participants" />
-            <marker date="1485270189000" expanded="true" signature="9411:9903" ph="INSERT INTO user_pages_visit_list... " />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/gps_to_location_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-771">
-          <caret line="97" column="4" lean-forward="false" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
-          <folding>
-            <element signature="e#41#55#0" expanded="true" />
-            <marker date="1485276455000" expanded="true" signature="2764:2793" ph="SELECT * FRO... individual_data" />
-            <marker date="1485276455000" expanded="true" signature="2953:2985" ph="SELECT * FRO... final_participants" />
-            <marker date="1485276455000" expanded="true" signature="3169:3261" ph="SELECT userI... " />
-            <marker date="1485276455000" expanded="true" signature="9762:10193" ph="INSERT INTO user_location_list... " />
-            <marker date="1485276455000" expanded="true" signature="9762:10268" ph="INSERT INTO mobility_data... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/calculate_location_diversity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="76" selection-end-column="27" />
-          <folding>
-            <element signature="e#41#52#0" expanded="true" />
-            <marker date="1485277050000" expanded="true" signature="1260:1292" ph="SELECT * FRO... final_participants" />
-            <marker date="1485277050000" expanded="true" signature="1390:1422" ph="SELECT * FRO... user_location_list" />
-            <marker date="1485277050000" expanded="true" signature="2959:3161" ph="INSERT INTO user_location_diversity... " />
-            <marker date="1485277050000" expanded="true" signature="2959:3180" ph="INSERT INTO user_location_diversity... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/calculate_online_diversity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="75" column="48" lean-forward="true" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
-          <folding>
-            <element signature="e#41#52#0" expanded="true" />
-            <marker date="1485277273000" expanded="true" signature="1260:1292" ph="SELECT * FRO... final_participants" />
-            <marker date="1485277273000" expanded="true" signature="1393:1428" ph="SELECT * FRO... user_pages_visit_list" />
-            <marker date="1485277273000" expanded="true" signature="2870:3083" ph="INSERT INTO user_online_diversity... " />
-          </folding>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
         </state>
       </provider>
     </entry>
