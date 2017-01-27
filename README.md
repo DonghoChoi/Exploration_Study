@@ -20,3 +20,8 @@ Repository for Exploration Study Project
 
 [Data Analysis]
 - comparison_analysis_using_location_features.py: reads 
+
+[Survey Data]
+- calculate_personality.py: read user_personality_responses table, which was already imported from the survey responses, and calculate the five category scores to save them into user_personality table.
+- calculate_Miller.py: read user_Miller_responses table, to calculate and save the Miller score into the table, user_Miller.
+- calculate_Williams.py: reads user_Williams_respones table, calculates and saves the Williams score (Bonding scale & Bridging scale)
