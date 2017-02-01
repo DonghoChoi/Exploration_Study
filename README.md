@@ -19,9 +19,12 @@ Repository for Exploration Study Project
 - calculage_browse_diversity.py: Read user_pages_visit_list table, calculate (1) number of distinct domains, (2) browse diversity, and (3) browse loyalty, and save it into the [table:user_browse_history]
 
 [Data Analysis]
-- comparison_analysis_using_location_features.py: reads 
+- comparison_analysis_using_location_features.py: reads
+- join_tables.py: create an aggregated view that contains independent variables.
 
 [Survey Data]
 - calculate_personality.py: read user_personality_responses table, which was already imported from the survey responses, and calculate the five category scores to save them into user_personality table.
 - calculate_Miller.py: read user_Miller_responses table, to calculate and save the Miller score into the table, user_Miller.
 - calculate_Williams.py: reads user_Williams_respones table, calculates and saves the Williams score (Bonding scale & Bridging scale)
+- calculate_time_preference.py: reads responses regarding time preference, calculates the measures of timeA and timeB, explaining the participant's time preference.
+- calculate_risk_preference.py: get riskA and riskB.
