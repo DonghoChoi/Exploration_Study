@@ -17,6 +17,7 @@ Repository for Exploration Study Project
 - searchlog_analysis_dyad.py: read search log data from lab session, calculate measures for all possible pairs. [table: dyad_data]
 - search_log_to_page_list.py: read search log data from field session, extract web pages they visited, calculating distinct pages, visit_times, spent_time, routine.. [table:user_pages_visit_list]
 - calculage_browse_diversity.py: Read user_pages_visit_list table, calculate (1) number of distinct domains, (2) browse diversity, and (3) browse loyalty, and save it into the [table:user_browse_history]
+- lab_task1_to_running_time.py: read search log data from lab session, 
 
 [Data Analysis]
 - comparison_analysis_using_location_features.py: reads

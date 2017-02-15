@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88af48be-b1ce-4a79-8b05-26b714076809" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/calculate_risk_preference.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/calculate_time_preference.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/join_tables.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/lab_task1_2_to_queries.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/lab_task1_to_running_time.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -41,9 +40,11 @@
     <SUITE FILE_PATH="coverage/Code$calculate_Williams.coverage" NAME="calculate_Williams Coverage Results" MODIFIED="1485546729448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$copy_files_exploration.coverage" NAME="copy_files_exploration Coverage Results" MODIFIED="1481473546438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$calculate_personality.coverage" NAME="calculate_personality Coverage Results" MODIFIED="1485499884473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$lab_task1_2_to_queries.coverage" NAME="lab_task1_2_to_queries Coverage Results" MODIFIED="1487034354702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$copy_files.coverage" NAME="copy_files Coverage Results" MODIFIED="1480081351374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$search_log_analysis_sigir2017.coverage" NAME="search_log_analysis_sigir2017 Coverage Results" MODIFIED="1484636324564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$search_log_to_page_list.coverage" NAME="search_log_to_page_list Coverage Results" MODIFIED="1485270221950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$search_log_to_timeline.coverage" NAME="search_log_to_timeline Coverage Results" MODIFIED="1487021519669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -66,8 +67,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="378">
-                <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+              <first_editor relative-caret-position="285">
+                <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -75,32 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calculate_risk_preference.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/calculate_risk_preference.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="102" column="27" lean-forward="true" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
-              <folding>
-                <element signature="e#41#52#0" expanded="true" />
-                <marker date="1485922094000" expanded="true" signature="1354:1386" ph="SELECT * FRO... final_participants" />
-                <marker date="1485922094000" expanded="true" signature="1589:1693" ph="SELECT userI... user_risk_time_preference_responses" />
-                <marker date="1485922094000" expanded="true" signature="4220:4348" ph="INSERT INTO user_risk_preference... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server_config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/configs/server_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="join_tables.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="join_tables.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local/join_tables.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
@@ -154,11 +130,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="server_config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/configs/server_config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="calculate_time_preference.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local/calculate_time_preference.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="95" column="8" lean-forward="true" selection-start-line="95" selection-start-column="8" selection-end-line="97" selection-end-column="27" />
+            <state relative-caret-position="1425">
+              <caret line="95" column="8" lean-forward="false" selection-start-line="95" selection-start-column="8" selection-end-line="97" selection-end-column="27" />
               <folding>
                 <element signature="e#41#52#0" expanded="true" />
                 <marker date="1485880229000" expanded="true" signature="1353:1385" ph="SELECT * FRO... final_participants" />
@@ -169,58 +155,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calculate_personality.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/calculate_personality.py">
+      <file leaf-file-name="search_log_to_page_list.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/search_log_to_page_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+            <state relative-caret-position="2475">
+              <caret line="178" column="31" lean-forward="true" selection-start-line="178" selection-start-column="31" selection-end-line="178" selection-end-column="31" />
               <folding>
-                <element signature="e#41#52#0" expanded="true" />
-                <marker date="1485499458000" expanded="true" signature="1958:1972" ph="SELECT * FRO... individual_data" />
-                <marker date="1485499458000" expanded="true" signature="1958:1998" ph="SELECT * FRO... user_personality_responses" />
-                <marker date="1485499458000" expanded="true" signature="3067:3296" ph="INSERT INTO user_personality... " />
-                <marker date="1485499458000" expanded="true" signature="3067:3321" ph="INSERT INTO user_personality... " />
-                <marker date="1485499458000" expanded="true" signature="3067:3343" ph="INSERT INTO user_personality... " />
+                <marker date="1485270189000" expanded="true" signature="2069:2133" ph="SELECT userI... pages_test" />
+                <marker date="1485270189000" expanded="true" signature="2424:2456" ph="SELECT * FRO... final_participants" />
+                <marker date="1485270189000" expanded="true" signature="9411:9903" ph="INSERT INTO user_pages_visit_list... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_log_analysis_dyad.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/search_log_analysis_dyad.py">
+      <file leaf-file-name="lab_task1_to_running_time.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/lab_task1_to_running_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="278" column="67" lean-forward="true" selection-start-line="278" selection-start-column="29" selection-end-line="278" selection-end-column="67" />
+            <state relative-caret-position="299">
+              <caret line="146" column="39" lean-forward="true" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
               <folding>
-                <element signature="e#41#55#0" expanded="true" />
-                <marker date="1484604291000" expanded="true" signature="6986:7018" ph="SELECT * FRO... final_participants" />
-                <marker date="1484604291000" expanded="true" signature="7441:7536" ph="SELECT userI... " />
-                <marker date="1484604291000" expanded="true" signature="7750:7792" ph="SELECT * FRO... queries" />
-                <marker date="1484604291000" expanded="true" signature="16942:16962" ph="DROP TABLE I... " />
-                <marker date="1484604291000" expanded="true" signature="16942:16978" ph="DROP TABLE I... " />
-                <marker date="1484604291000" expanded="true" signature="17016:17046" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17052" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17061" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17079" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17104" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17118" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17127" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17156" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17157" ph="CREATE TABLE... CREATE" />
-                <marker date="1484604291000" expanded="true" signature="17016:17158" ph="CREATE TABLE... individual_data" />
-                <marker date="1484604291000" expanded="true" signature="17239:17335" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17344" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17408" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17461" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17519" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17522" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17591" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17655" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17239:17657" ph="INSERT INTO individual_data... " />
-                <marker date="1484604291000" expanded="true" signature="17714:17744" ph="DROP TABLE I... " />
-                <marker date="1484604291000" expanded="true" signature="17782:17933" ph="CREATE TABLE... dyad_data" />
-                <marker date="1484604291000" expanded="true" signature="18016:18271" ph="INSERT INTO dyad_data... " />
-                <marker date="1484604291000" expanded="true" signature="18016:18475" ph="INSERT INTO individual_data... " />
+                <marker date="1487022907000" expanded="true" signature="1954:2051" ph="SELECT userI... pages_lab" />
+                <marker date="1487022907000" expanded="true" signature="2400:2432" ph="SELECT * FRO... final_participants" />
+                <marker date="1487022907000" expanded="true" signature="10799:10986" ph="INSERT INTO user_task1_answering_time... " />
+                <marker date="1487022907000" expanded="true" signature="10799:11166" ph="INSERT INTO user_pages_visit_list... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lab_task1_2_to_queries.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/local/lab_task1_2_to_queries.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="826">
+              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+              <folding>
+                <marker date="1487041218000" expanded="true" signature="1952:2024" ph="SELECT userI... queries" />
+                <marker date="1487041218000" expanded="true" signature="2314:2346" ph="SELECT * FRO... final_participants" />
+                <marker date="1487041218000" expanded="true" signature="4288:4375" ph="INSERT INTO user_task1_queries... " />
+                <marker date="1487041218000" expanded="true" signature="4288:4403" ph="INSERT INTO user_task1_queries... " />
+                <marker date="1487041218000" expanded="true" signature="4288:4420" ph="INSERT INTO user_task1_queries... " />
+                <marker date="1487041218000" expanded="true" signature="4288:4450" ph="INSERT INTO user_task1_queries... " />
+                <marker date="1487041218000" expanded="true" signature="4288:4489" ph="INSERT INTO user_task1_queries... " />
+                <marker date="1487041218000" expanded="true" signature="5381:5573" ph="INSERT INTO user_task2_queries... " />
               </folding>
             </state>
           </provider>
@@ -285,7 +262,10 @@
         <option value="$PROJECT_DIR$/local/configs/calculate_risk_preference.py" />
         <option value="$PROJECT_DIR$/local/calculate_risk_preference.py" />
         <option value="$PROJECT_DIR$/local/join_tables.py" />
+        <option value="$PROJECT_DIR$/local/search_log_to_timeline.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/local/lab_task1_to_running_time.py" />
+        <option value="$PROJECT_DIR$/local/lab_task1_2_to_queries.py" />
       </list>
     </option>
   </component>
@@ -296,8 +276,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
-    <option name="y" value="-185" />
+    <option name="x" value="-157" />
+    <option name="y" value="-1027" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
@@ -385,55 +365,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/local" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/local" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/local" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.join_tables">
-    <configuration default="false" name="calculate_Miller" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/calculate_Miller.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="calculate_Williams" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/calculate_Williams.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.lab_task1_2_to_queries">
     <configuration default="false" name="join_tables" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -484,6 +427,42 @@
       <module name="Code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/calculate_risk_preference.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="search_log_to_timeline" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/lab_task1_to_running_time.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab_task1_2_to_queries" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/lab_task1_2_to_queries.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -703,19 +682,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.calculate_Miller" />
-      <item index="1" class="java.lang.String" itemvalue="Python.calculate_Williams" />
-      <item index="2" class="java.lang.String" itemvalue="Python.join_tables" />
-      <item index="3" class="java.lang.String" itemvalue="Python.calculate_time_preference" />
-      <item index="4" class="java.lang.String" itemvalue="Python.calculate_risk_preference" />
+      <item index="0" class="java.lang.String" itemvalue="Python.join_tables" />
+      <item index="1" class="java.lang.String" itemvalue="Python.calculate_time_preference" />
+      <item index="2" class="java.lang.String" itemvalue="Python.calculate_risk_preference" />
+      <item index="3" class="java.lang.String" itemvalue="Python.search_log_to_timeline" />
+      <item index="4" class="java.lang.String" itemvalue="Python.lab_task1_2_to_queries" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.join_tables" />
-        <item index="1" class="java.lang.String" itemvalue="Python.calculate_risk_preference" />
-        <item index="2" class="java.lang.String" itemvalue="Python.calculate_time_preference" />
-        <item index="3" class="java.lang.String" itemvalue="Python.calculate_Williams" />
-        <item index="4" class="java.lang.String" itemvalue="Python.calculate_Miller" />
+        <item index="0" class="java.lang.String" itemvalue="Python.lab_task1_2_to_queries" />
+        <item index="1" class="java.lang.String" itemvalue="Python.search_log_to_timeline" />
+        <item index="2" class="java.lang.String" itemvalue="Python.join_tables" />
+        <item index="3" class="java.lang.String" itemvalue="Python.calculate_risk_preference" />
+        <item index="4" class="java.lang.String" itemvalue="Python.calculate_time_preference" />
       </list>
     </recent_temporary>
   </component>
@@ -764,17 +743,27 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-185" width="1680" height="1027" extended-state="6" />
+    <frame x="-157" y="-1027" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17440476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24089068" sideWeight="0.52239585" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39676112" sideWeight="0.5130208" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4091858" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47181627" sideWeight="0.47760418" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21862349" sideWeight="0.48697916" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39561588" sideWeight="0.47760418" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -784,7 +773,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -830,20 +818,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study_2015/fitbit_data_management.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/config.py" />
     <entry file="file://$PROJECT_DIR$/local/get_locations_sensor.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1040,83 +1014,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/search_log_to_page_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2424">
-          <caret line="175" column="62" lean-forward="false" selection-start-line="175" selection-start-column="62" selection-end-line="175" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/calculate_location_diversity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="72" column="103" lean-forward="false" selection-start-line="72" selection-start-column="103" selection-end-line="72" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/comparison_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="e#41#55#0" expanded="false" />
-            <marker date="1484861645000" expanded="true" signature="3221:3250" ph="SELECT * FRO... individual_data" />
-            <marker date="1484861645000" expanded="true" signature="3356:3379" ph="SELECT * FRO... dyad_data" />
-            <marker date="1484861645000" expanded="true" signature="3757:3771" ph="SELECT * FRO... final_participants" />
-            <marker date="1484861645000" expanded="true" signature="3757:3784" ph="SELECT * FRO... mobility_data" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/calculate_online_diversity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="77" selection-end-column="27" />
-          <folding>
-            <element signature="e#41#52#0" expanded="true" />
-            <marker date="1485281049000" expanded="true" signature="1260:1292" ph="SELECT * FRO... final_participants" />
-            <marker date="1485281049000" expanded="true" signature="1393:1428" ph="SELECT * FRO... user_pages_visit_list" />
-            <marker date="1485281049000" expanded="true" signature="2870:3097" ph="INSERT INTO user_online_diversity... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/comparison_analysis_01192017.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-257">
           <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="63" />
-          <folding>
-            <element signature="e#41#55#0" expanded="true" />
-            <marker date="1484946065000" expanded="true" signature="3745:3774" ph="SELECT * FRO... individual_data" />
-            <marker date="1484946065000" expanded="true" signature="3880:3903" ph="SELECT * FRO... dyad_data" />
-            <marker date="1484946065000" expanded="true" signature="4281:4308" ph="SELECT * FRO... mobility_data" />
-            <marker date="1484946065000" expanded="true" signature="4281:4325" ph="SELECT * FRO... mobility_data" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/calculate_Williams.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="41" column="96" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="96" />
-          <folding>
-            <element signature="e#41#52#0" expanded="true" />
-            <marker date="1485546729000" expanded="true" signature="1342:1379" ph="SELECT * FRO... user_Williams_responses" />
-            <marker date="1485546729000" expanded="true" signature="2019:2161" ph="INSERT INTO user_Williams... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/calculate_Miller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="136" selection-end-column="16" />
-          <folding>
-            <element signature="e#41#52#0" expanded="true" />
-            <marker date="1485534083000" expanded="true" signature="1342:1377" ph="SELECT * FRO... user_Miller_responses" />
-            <marker date="1485534083000" expanded="true" signature="4156:4301" ph="INSERT INTO user_Miller... " />
-            <marker date="1485534083000" expanded="true" signature="4156:4327" ph="INSERT INTO user_personality... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,22 +1025,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/calculate_risk_preference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="102" column="27" lean-forward="false" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
           <folding>
-            <element signature="e#41#52#0" expanded="true" />
-            <marker date="1485400610000" expanded="true" signature="2157:2186" ph="SELECT * FRO... individual_data" />
-            <marker date="1485400610000" expanded="true" signature="2292:2315" ph="SELECT * FRO... dyad_data" />
-            <marker date="1485400610000" expanded="true" signature="2713:2807" ph="SELECT * FRO... mobility_data" />
-            <marker date="1485400610000" expanded="true" signature="2929:2973" ph="SELECT * FRO... mobility_data" />
+            <element signature="e#41#52#0" expanded="false" />
+            <marker date="1485922094000" expanded="true" signature="1354:1386" ph="SELECT * FRO... final_participants" />
+            <marker date="1485922094000" expanded="true" signature="1589:1693" ph="SELECT userI... user_risk_time_preference_responses" />
+            <marker date="1485922094000" expanded="true" signature="4220:4348" ph="INSERT INTO user_risk_preference... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/calculate_personality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="52" column="44" lean-forward="false" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+          <folding>
+            <element signature="e#41#52#0" expanded="false" />
+            <marker date="1485499458000" expanded="true" signature="1958:1972" ph="SELECT * FRO... individual_data" />
+            <marker date="1485499458000" expanded="true" signature="1958:1998" ph="SELECT * FRO... user_personality_responses" />
+            <marker date="1485499458000" expanded="true" signature="3067:3296" ph="INSERT INTO user_personality... " />
+            <marker date="1485499458000" expanded="true" signature="3067:3321" ph="INSERT INTO user_personality... " />
+            <marker date="1485499458000" expanded="true" signature="3067:3343" ph="INSERT INTO user_personality... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/search_log_analysis_dyad.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="278" column="67" lean-forward="true" selection-start-line="278" selection-start-column="29" selection-end-line="278" selection-end-column="67" />
+        <state relative-caret-position="4035">
+          <caret line="278" column="67" lean-forward="false" selection-start-line="278" selection-start-column="29" selection-end-line="278" selection-end-column="67" />
           <folding>
-            <element signature="e#41#55#0" expanded="true" />
+            <element signature="e#41#55#0" expanded="false" />
             <marker date="1484604291000" expanded="true" signature="6986:7018" ph="SELECT * FRO... final_participants" />
             <marker date="1484604291000" expanded="true" signature="7441:7536" ph="SELECT userI... " />
             <marker date="1484604291000" expanded="true" signature="7750:7792" ph="SELECT * FRO... queries" />
@@ -1172,68 +1094,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/calculate_personality.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
-          <folding>
-            <element signature="e#41#52#0" expanded="true" />
-            <marker date="1485499458000" expanded="true" signature="1958:1972" ph="SELECT * FRO... individual_data" />
-            <marker date="1485499458000" expanded="true" signature="1958:1998" ph="SELECT * FRO... user_personality_responses" />
-            <marker date="1485499458000" expanded="true" signature="3067:3296" ph="INSERT INTO user_personality... " />
-            <marker date="1485499458000" expanded="true" signature="3067:3321" ph="INSERT INTO user_personality... " />
-            <marker date="1485499458000" expanded="true" signature="3067:3343" ph="INSERT INTO user_personality... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/configs/server_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/calculate_time_preference.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="95" column="8" lean-forward="true" selection-start-line="95" selection-start-column="8" selection-end-line="97" selection-end-column="27" />
+        <state relative-caret-position="1425">
+          <caret line="95" column="8" lean-forward="false" selection-start-line="95" selection-start-column="8" selection-end-line="97" selection-end-column="27" />
           <folding>
             <element signature="e#41#52#0" expanded="true" />
             <marker date="1485880229000" expanded="true" signature="1353:1385" ph="SELECT * FRO... final_participants" />
             <marker date="1485880229000" expanded="true" signature="1588:1702" ph="SELECT * FRO... user_risk_time_preference_responses" />
             <marker date="1485880229000" expanded="true" signature="3904:4032" ph="INSERT INTO user_time_preference... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/calculate_risk_preference.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="102" column="27" lean-forward="true" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
-          <folding>
-            <element signature="e#41#52#0" expanded="true" />
-            <marker date="1485922094000" expanded="true" signature="1354:1386" ph="SELECT * FRO... final_participants" />
-            <marker date="1485922094000" expanded="true" signature="1589:1693" ph="SELECT userI... user_risk_time_preference_responses" />
-            <marker date="1485922094000" expanded="true" signature="4220:4348" ph="INSERT INTO user_risk_preference... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="378">
-            <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1285,6 +1155,135 @@
             <marker date="1485922552000" expanded="true" signature="1241:2884" ph="CREATE VIEW aggregated_data... " />
             <marker date="1485922552000" expanded="true" signature="1241:2957" ph="CREATE VIEW aggregated_data... " />
             <marker date="1485922552000" expanded="true" signature="3023:3052" ph="SELECT * FRO... aggregated_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/calculate_location_diversity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="72" column="103" lean-forward="false" selection-start-line="72" selection-start-column="103" selection-end-line="72" selection-end-column="103" />
+          <folding>
+            <marker date="1485281049000" expanded="true" signature="1260:1292" ph="SELECT * FRO... final_participants" />
+            <marker date="1485281049000" expanded="true" signature="1390:1422" ph="SELECT * FRO... user_location_list" />
+            <marker date="1485281049000" expanded="true" signature="2959:3198" ph="INSERT INTO user_location_diversity... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/calculate_Miller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="136" selection-end-column="16" />
+          <folding>
+            <element signature="e#41#52#0" expanded="true" />
+            <marker date="1485534083000" expanded="true" signature="1342:1377" ph="SELECT * FRO... user_Miller_responses" />
+            <marker date="1485534083000" expanded="true" signature="4156:4301" ph="INSERT INTO user_Miller... " />
+            <marker date="1485534083000" expanded="true" signature="4156:4327" ph="INSERT INTO user_personality... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/calculate_online_diversity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="973">
+          <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <folding>
+            <element signature="e#41#52#0" expanded="true" />
+            <marker date="1485281049000" expanded="true" signature="1260:1292" ph="SELECT * FRO... final_participants" />
+            <marker date="1485281049000" expanded="true" signature="1393:1428" ph="SELECT * FRO... user_pages_visit_list" />
+            <marker date="1485281049000" expanded="true" signature="2870:3097" ph="INSERT INTO user_online_diversity... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/calculate_Williams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding>
+            <element signature="e#41#52#0" expanded="true" />
+            <marker date="1485546729000" expanded="true" signature="1342:1379" ph="SELECT * FRO... user_Williams_responses" />
+            <marker date="1485546729000" expanded="true" signature="2019:2161" ph="INSERT INTO user_Williams... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/comparison_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2342">
+          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <marker date="1484861645000" expanded="true" signature="3221:3250" ph="SELECT * FRO... individual_data" />
+            <marker date="1484861645000" expanded="true" signature="3356:3379" ph="SELECT * FRO... dyad_data" />
+            <marker date="1484861645000" expanded="true" signature="3757:3771" ph="SELECT * FRO... final_participants" />
+            <marker date="1484861645000" expanded="true" signature="3757:3784" ph="SELECT * FRO... mobility_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/configs/server_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/search_log_to_page_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="178" column="31" lean-forward="true" selection-start-line="178" selection-start-column="31" selection-end-line="178" selection-end-column="31" />
+          <folding>
+            <marker date="1485270189000" expanded="true" signature="2069:2133" ph="SELECT userI... pages_test" />
+            <marker date="1485270189000" expanded="true" signature="2424:2456" ph="SELECT * FRO... final_participants" />
+            <marker date="1485270189000" expanded="true" signature="9411:9903" ph="INSERT INTO user_pages_visit_list... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/lab_task1_to_running_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="146" column="39" lean-forward="true" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+          <folding>
+            <marker date="1487022907000" expanded="true" signature="1954:2051" ph="SELECT userI... pages_lab" />
+            <marker date="1487022907000" expanded="true" signature="2400:2432" ph="SELECT * FRO... final_participants" />
+            <marker date="1487022907000" expanded="true" signature="10799:10986" ph="INSERT INTO user_task1_answering_time... " />
+            <marker date="1487022907000" expanded="true" signature="10799:11166" ph="INSERT INTO user_pages_visit_list... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/lab_task1_2_to_queries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <marker date="1487041218000" expanded="true" signature="1952:2024" ph="SELECT userI... queries" />
+            <marker date="1487041218000" expanded="true" signature="2314:2346" ph="SELECT * FRO... final_participants" />
+            <marker date="1487041218000" expanded="true" signature="4288:4375" ph="INSERT INTO user_task1_queries... " />
+            <marker date="1487041218000" expanded="true" signature="4288:4403" ph="INSERT INTO user_task1_queries... " />
+            <marker date="1487041218000" expanded="true" signature="4288:4420" ph="INSERT INTO user_task1_queries... " />
+            <marker date="1487041218000" expanded="true" signature="4288:4450" ph="INSERT INTO user_task1_queries... " />
+            <marker date="1487041218000" expanded="true" signature="4288:4489" ph="INSERT INTO user_task1_queries... " />
+            <marker date="1487041218000" expanded="true" signature="5381:5573" ph="INSERT INTO user_task2_queries... " />
           </folding>
         </state>
       </provider>
