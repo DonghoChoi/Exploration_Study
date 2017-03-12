@@ -94,8 +94,8 @@ if __name__ == "__main__":
     print('number of participants:{0}'.format(num_participants))
 
     ## POPULATE VISITS OF PARTICIPANTS
-    #for i in range(0, num_participants-1):
-    for i in range(0,1):
+    for i in range(0, num_participants-1):
+    #for i in range(0,1):
         df_user_visits = pd.DataFrame(columns=('userID', 'visit_start', 'visit_end', 'dwellTime', 'latitude', 'longitude'))
         current_userID = participants_list[i]
         df_temp_locations = df_locations_all.loc[df_locations_all['userID'] == current_userID] # location list of a particular user

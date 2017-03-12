@@ -4,11 +4,36 @@ ad<-read.csv("aggregate_data.csv")
 ad$gender_d <-0
 ad$gender_d[ad$gender=="M"]<-1
 
+merged$gender_d<-0
+merged$gender_d[merged$gender=="M"] <- 1
+
 library(ggplot2)
 
 # Location loyalty and Useful Coverage
 scatter_location_loyalty <- ggplot(ad,aes(location_loyalty,UsefulCoverage,color=gender))
 scatter_location_loyalty + geom_point() + labs(x="Location Loyalty",y="Useful Coverage",color="gender") + geom_smooth(method="lm",aes(fill=gender),alpha=0.1)
+
+crBoxplot <- ggplot(merged, aes(gender, cr_score))
+crBoxplot + geom_boxplot() + labs(x="Gender",y="CR (Cube Rotations) Score")
+
+ccBoxplot <- ggplot(merged, aes(gender, cc_score))
+ccBoxplot + geom_boxplot() + labs(x="Gender",y="CC (Cube Comparisons) Score")
+
+mtBoxplot <- ggplot(merged, aes(gender, mt_score))
+mtBoxplot + geom_boxplot() + labs(x="Gender",y="MT (Maze Tracing Speed) Score")
+
+cpBoxplot <- ggplot(merged, aes(gender, cp_score))
+cpBoxplot + geom_boxplot() + labs(x="Gender",y="CP (Choosing a Path) Score")
+
+mpBoxplot <- ggplot(merged, aes(gender, mp_score))
+mpBoxplot + geom_boxplot() + labs(x="Gender",y="MP (Map Planning) Score")
+
+
+
+t.test(ad$cr_score,ad$gender_d)
+
+library(compareGroups)
+res <- compareGroups(gender ~ .-cr_score, data=ad)
 
 # dummy variable coding using riskB
 ad$riskB_d1 <-0

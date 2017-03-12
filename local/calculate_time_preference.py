@@ -82,11 +82,11 @@ if __name__ == "__main__":
         if(SI22E == "Yes"):
             #print("User {0} has negative time discount -> dropping".format(current_userID))
             timeB = -1
-        if(SI22C == "$$100,000 in 5 years"):
+        if(SI22C == "$100,000 in 5 years"):
             timeB = 3
         if(SI22C == "$10,000 today"):
             timeB = 4
-        if(SI22D == "$$20,000 in 5 years"):
+        if(SI22D == "$20,000 in 5 years"):
             timeB = 1
         if(SI22D == "$10,000 today"):
             timeB = 2
