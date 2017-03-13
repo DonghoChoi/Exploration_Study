@@ -29,6 +29,7 @@ Repository for Exploration Study Project
 [Treasure Hunt Data Process]
 - parse_video_coding_vcode.py: read the coding data from the **vCode** program in the text format and store them into the mysql db in the server [output table: user_TH_vCode_results]
 - parse_video_coding_boris.py: read the coding data from the **Boris** program, which is in tsv format, and store them into the mysql db in the server [output table: user_TH_Boris_results].
+- TH_data_merging.py: read both vCode and Boris coding data and merge them into a table [output table: user_TH_merged_results]
 
 [Survey Data]
 - calculate_personality.py: read user_personality_responses table, which was already imported from the survey responses, and calculate the five category scores to save them into user_personality table.
