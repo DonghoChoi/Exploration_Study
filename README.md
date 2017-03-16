@@ -20,7 +20,7 @@ Repository for Exploration Study Project
 - extract_query_from_field_search.py: out of four-week field search data, this code mines search sessions and extracts distinct queries, coverage, useful coverage, etc. **[output table:pages_field_session]**
 - mine_sessions_from_field_search.py: **[input table:pages_field_session]** mine subsessions in the pages list and merge them into sessions with sessionID **[output table: user_field_search_session]** and the number of issued queries and distinct queries **[output table: user_field_queries]** 
 - calculate_coverage_field_session.py: **[input table:user_field_search_session]** calculate coverage, useful coverage, and utilization ratio for each search session **[output table:user_field_session_coverage]**.
-
+- WS_get_query_document.py: read **page_lab** table to summarize the queries and visited document corresponding to the query in each task.
 
 **[General Data Analysis]**
 - comparison_analysis_using_location_features.py: reads
