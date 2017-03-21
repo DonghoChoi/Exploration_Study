@@ -23,12 +23,6 @@ import sys
 sys.path.append("/Users/donghochoi/Documents/Work/Exploration_Study/Dissertation/Code/local/configs/")
 import server_config # (1) info2_server (2) exploration_db
 
-def find_domain(current_domain,df_distinct_visit_list): # Return -1 when no domain_query existing, otherwise the location
-    for i in range(0, len(df_distinct_visit_list)):
-        if current_domain == df_distinct_visit_list.iloc[i]['domain']:
-            #print("if found same domain: i = {0}, domainID = {1}".format(i,df_distinct_visit_list.iloc[i]['domainID']))
-            return df_distinct_visit_list.iloc[i]['domainID']
-    return -1
 
 if __name__ == "__main__":
 
@@ -84,7 +78,7 @@ if __name__ == "__main__":
             # Rest of them
             df_with_spent_time.iloc[j,df_with_spent_time.columns.get_loc('userID')] = current_userID
             df_with_spent_time.iloc[j,df_with_spent_time.columns.get_loc('url')] = df_user_pages.iloc[j,df_user_pages.columns.get_loc('url')]
-            df_with_spent_time.iloc[j, df_with_spent_time.columns.get_loc('query')] = df_user_pages.iloc[j, df_user_pages.columns.get_loc('query')]
+            df_with_spent_time.iloc[j,df_with_spent_time.columns.get_loc('query')] = df_user_pages.iloc[j, df_user_pages.columns.get_loc('query')]
             if ((df_user_pages.iloc[j,df_user_pages.columns.get_loc('stageID')]==30) | (df_user_pages.iloc[j,df_user_pages.columns.get_loc('stageID')]==31)):
                 df_with_spent_time.iloc[j,df_with_spent_time.columns.get_loc('task')] = 1
             if ((df_user_pages.iloc[j,df_user_pages.columns.get_loc('stageID')]==40) | (df_user_pages.iloc[j,df_user_pages.columns.get_loc('stageID')]==41)):
@@ -238,57 +232,6 @@ if __name__ == "__main__":
             else:
                 print("EXISTED IN PREVIOUS QUERY SESSION! - {0}".format(current_query))
 
-
-    '''
-
-        df_task1_queries = df_user_queries.loc[df_user_queries['stageID']==31]
-        df_task2_queries = df_user_queries.loc[df_user_queries['stageID']==41]
-
-        ###### TASK 1 #######
-        # number of questions that the person asked
-        num_questions = df_task1_queries['questionID'].max()
-
-        task1_query_list = []
-
-        for j in range(0, num_questions):
-            df_question_queries = df_task1_queries.loc[df_task1_queries['questionID']==j+1]
-            query_list = df_question_queries['query'].tolist()
-            query_set = set(query_list)
-            num_a = len(query_set)
-            # check if queries that issued for previous questions are included.
-            stacked_query_set = set(task1_query_list)
-            query_set = query_set - stacked_query_set
-            num_b = len(query_set)
-            repeated_query = num_a-num_b
-            if (repeated_query != 0):
-                print("--------------- Query used in previous questions: {0} times".format(repeated_query))
-            num_query_issued = len(query_list)-repeated_query
-            num_distinct_query_issued = len(query_set)
-            print("in question {0}: {1} queries issued, and {2} distinct queries".format(j+1,num_query_issued,num_distinct_query_issued))
-
-            sql = "INSERT INTO user_task1_queries (userID,questionID,query_issued,distinct_query) VALUES (" + str(current_userID) + "," + str(j+1) + "," + str(num_query_issued) + "," + str(num_distinct_query_issued) + ");"
-            print(sql)
-            cursor.execute(sql)
-
-            task1_query_list = list(set(task1_query_list + query_list))
-
-        ###### TASK 2 ######
-        task2_query_list = df_task2_queries['query'].tolist()
-        task2_query_set = set(task2_query_list)
-        num_c = len(task2_query_set)
-        stacked_query_set = set(task1_query_list)
-        task2_query_set = task2_query_set - stacked_query_set
-        num_d = len(task2_query_set)
-        task2_repeated_query = num_c-num_d
-        if(task2_repeated_query != 0):
-            print("------------ Query in task1 is revisited")
-        num_task2_query_issued = len(task2_query_list) - task2_repeated_query
-        num_task2_distinct_query_issued = len(task2_query_set)
-        print("in task2: {0} queries issued, and {1} distinct queries".format(num_task2_query_issued,num_task2_distinct_query_issued))
-        sql = "INSERT INTO user_task2_queries (userID,query_issued,distinct_query_issued) VALUES (" + str(current_userID) + "," + str(num_task2_query_issued) + "," + str(num_task2_distinct_query_issued) + ");"
-        print(sql)
-        cursor.execute(sql)
-    '''
     server.stop()
 
     print("End")
