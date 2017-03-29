@@ -181,7 +181,7 @@ if __name__ == "__main__":
     print("UniqueUsefulCoverage is top {0}".format(len(df_random_results_1000.loc[df_random_results_1000['UniUseCov_mean']>scenario_1_UniqueUsefulCoverage_mean])))
 
 
-    # Scenario 2.
+    # Scenario 2. Different pairs based on location loyalty
     list_scenario_2 = df_location_sorted_by_loyalty['userID'].tolist()
     list_pairs_scenario_2 = []
 

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88af48be-b1ce-4a79-8b05-26b714076809" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/local/CIS_application.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/random_trials_distribution.png" afterPath="$PROJECT_DIR$/local/random_trials_distribution.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/WS_get_query_document.py" afterPath="$PROJECT_DIR$/local/WS_get_query_document.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/comparison_analysis_using_location_features.py" afterPath="$PROJECT_DIR$/local/comparison_analysis_using_location_features.py" />
     </list>
     <ignored path="Code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,7 +20,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Code$merge_db.coverage" NAME="merge_db Coverage Results" MODIFIED="1480083514716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
-    <SUITE FILE_PATH="coverage/Code$comparison_analysis_using_location_features.coverage" NAME="comparison_analysis_using_location_features Coverage Results" MODIFIED="1485400690715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
+    <SUITE FILE_PATH="coverage/Code$comparison_analysis_using_location_features.coverage" NAME="comparison_analysis_using_location_features Coverage Results" MODIFIED="1490731676521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$comparison_analysis.coverage" NAME="comparison_analysis Coverage Results" MODIFIED="1484777803856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$calculate_location_diversity.coverage" NAME="calculate_location_diversity Coverage Results" MODIFIED="1485276621813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
     <SUITE FILE_PATH="coverage/Code$mine_sessions_from_field_search.coverage" NAME="mine_sessions_from_field_search Coverage Results" MODIFIED="1488139995031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local" />
@@ -74,8 +76,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <first_editor relative-caret-position="307">
+                <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -83,48 +85,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_log_to_page_list.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/search_log_to_page_list.py">
+      <file leaf-file-name="CIS_application.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/local/CIS_application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2325">
-              <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+            <state relative-caret-position="-630">
+              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
-                <marker date="1485270189000" expanded="true" signature="2069:2133" ph="SELECT userI... pages_test" />
-                <marker date="1485270189000" expanded="true" signature="2424:2456" ph="SELECT * FRO... final_participants" />
-                <marker date="1485270189000" expanded="true" signature="9411:9903" ph="INSERT INTO user_pages_visit_list... " />
+                <marker date="1490724683000" expanded="true" signature="2016:2163" ph="SELECT * FRO... user_TH_Boris_results" />
+                <marker date="1490724683000" expanded="true" signature="2016:2185" ph="SELECT userI... user_field_session_coverage" />
+                <marker date="1490724683000" expanded="true" signature="2016:2205" ph="SELECT userI... user_field_session_coverage" />
+                <marker date="1490724683000" expanded="true" signature="2016:2221" ph="SELECT userI... user_field_session_coverage" />
+                <marker date="1490724683000" expanded="true" signature="2422:2585" ph="SELECT userI... user_field_session_coverage" />
+                <marker date="1490724683000" expanded="true" signature="2422:2620" ph="SELECT userI... user_field_session_coverage" />
+                <marker date="1490724683000" expanded="true" signature="2784:2896" ph="SELECT userI... user_field_sessioin_coverage" />
+                <marker date="1490724683000" expanded="true" signature="3038:3162" ph="SELECT * FRO... user_online_diversity" />
+                <marker date="1490724683000" expanded="true" signature="3304:3463" ph="SELECT userI... individual_data" />
+                <marker date="1490724683000" expanded="true" signature="3587:3647" ph="SELECT userI... mobility_data" />
+                <marker date="1490724683000" expanded="true" signature="3791:3869" ph="SELECT userI... user_location_diversity" />
+                <marker date="1490724683000" expanded="true" signature="4610:4645" ph="SELECT * FRO... user_TH_vCode_results" />
+                <marker date="1490724683000" expanded="true" signature="4783:4834" ph="SELECT * FRO... final_participants" />
+                <marker date="1490724683000" expanded="true" signature="6375:6489" ph="INSERT INTO user_TH_merged_results... " />
+                <marker date="1490724683000" expanded="true" signature="7044:7158" ph="INSERT INTO user_TH_merged_results... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WS_get_query_document.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/local/WS_get_query_document.py">
+      <file leaf-file-name="gps_data_analysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/gps_data_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="67" column="116" lean-forward="false" selection-start-line="67" selection-start-column="116" selection-end-line="67" selection-end-column="116" />
-              <folding>
-                <element signature="e#88#102#0" expanded="true" />
-                <marker date="1489913019000" expanded="true" signature="1550:1652" ph="SELECT userI... pages_lab" />
-                <marker date="1489913019000" expanded="true" signature="1812:1844" ph="SELECT * FRO... final_participants" />
-                <marker date="1489913019000" expanded="true" signature="2041:2062" ph="SELECT userI... user_task1_answering_time" />
-                <marker date="1489913019000" expanded="true" signature="2041:2166" ph="SELECT userI... user_task1_answering_time" />
-                <marker date="1489913019000" expanded="true" signature="8408:8519" ph="INSERT INTO " />
-                <marker date="1489913019000" expanded="true" signature="11765:11874" ph="INSERT INTO user_WS_query_assessment... " />
-              </folding>
+            <state relative-caret-position="-2670">
+              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extract_query_from_field_search.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/extract_query_from_field_search.py">
+      <file leaf-file-name="comparison_analysis_using_location_features.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/comparison_analysis_using_location_features.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="97" column="232" lean-forward="false" selection-start-line="97" selection-start-column="201" selection-end-line="97" selection-end-column="232" />
+            <state relative-caret-position="889">
+              <caret line="183" column="59" lean-forward="false" selection-start-line="183" selection-start-column="59" selection-end-line="183" selection-end-column="59" />
               <folding>
-                <marker date="1488082125000" expanded="true" signature="1389:1421" ph="SELECT * FRO... final_participants" />
-                <marker date="1488082125000" expanded="true" signature="1850:1889" ph="SELECT * FRO... user_field_session_period" />
-                <marker date="1488082125000" expanded="true" signature="3024:3214" ph="SELECT userI... pages" />
-                <marker date="1488082125000" expanded="true" signature="5028:5118" ph="INSERT INTO pages_field_session... " />
+                <marker date="1490713234000" expanded="true" signature="2157:2186" ph="SELECT * FRO... individual_data" />
+                <marker date="1490713234000" expanded="true" signature="2292:2315" ph="SELECT * FRO... dyad_data" />
+                <marker date="1490713234000" expanded="true" signature="2713:2807" ph="SELECT userI... user_location_diversity" />
+                <marker date="1490713234000" expanded="true" signature="2929:2973" ph="SELECT * FRO... mobility_data" />
               </folding>
             </state>
           </provider>
@@ -182,7 +188,6 @@
         <option value="$PROJECT_DIR$/local/calculate_online_diversity.py" />
         <option value="$PROJECT_DIR$/local/calculate_location_diversity.py" />
         <option value="$PROJECT_DIR$/local/comparison_analysis_01192017.py" />
-        <option value="$PROJECT_DIR$/local/comparison_analysis_using_location_features.py" />
         <option value="$PROJECT_DIR$/local/configs/server_config.py" />
         <option value="$PROJECT_DIR$/local/calculate_personality.py" />
         <option value="$PROJECT_DIR$/local/calculate_Miller.py" />
@@ -203,8 +208,10 @@
         <option value="$PROJECT_DIR$/local/parse_video_coding_boris.py" />
         <option value="$PROJECT_DIR$/local/parse_video_coding_vcode.py" />
         <option value="$PROJECT_DIR$/local/TH_data_merging.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/local/WS_get_query_document.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/local/comparison_analysis_using_location_features.py" />
+        <option value="$PROJECT_DIR$/local/CIS_application.py" />
       </list>
     </option>
   </component>
@@ -238,8 +245,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -308,32 +315,14 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/local" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/local" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/local" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.WS_get_query_document">
-    <configuration default="false" name="calculate_coverage_field_session" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/calculate_coverage_field_session.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.comparison_analysis_using_location_features">
     <configuration default="false" name="parse_video_coding_boris" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -402,6 +391,24 @@
       <module name="Code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/WS_get_query_document.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="comparison_analysis_using_location_features" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/comparison_analysis_using_location_features.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -621,19 +628,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.calculate_coverage_field_session" />
-      <item index="1" class="java.lang.String" itemvalue="Python.parse_video_coding_boris" />
-      <item index="2" class="java.lang.String" itemvalue="Python.parse_video_coding_vcode" />
-      <item index="3" class="java.lang.String" itemvalue="Python.TH_data_merging" />
-      <item index="4" class="java.lang.String" itemvalue="Python.WS_get_query_document" />
+      <item index="0" class="java.lang.String" itemvalue="Python.parse_video_coding_boris" />
+      <item index="1" class="java.lang.String" itemvalue="Python.parse_video_coding_vcode" />
+      <item index="2" class="java.lang.String" itemvalue="Python.TH_data_merging" />
+      <item index="3" class="java.lang.String" itemvalue="Python.WS_get_query_document" />
+      <item index="4" class="java.lang.String" itemvalue="Python.comparison_analysis_using_location_features" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.WS_get_query_document" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TH_data_merging" />
-        <item index="2" class="java.lang.String" itemvalue="Python.parse_video_coding_vcode" />
-        <item index="3" class="java.lang.String" itemvalue="Python.parse_video_coding_boris" />
-        <item index="4" class="java.lang.String" itemvalue="Python.calculate_coverage_field_session" />
+        <item index="0" class="java.lang.String" itemvalue="Python.comparison_analysis_using_location_features" />
+        <item index="1" class="java.lang.String" itemvalue="Python.WS_get_query_document" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TH_data_merging" />
+        <item index="3" class="java.lang.String" itemvalue="Python.parse_video_coding_vcode" />
+        <item index="4" class="java.lang.String" itemvalue="Python.parse_video_coding_boris" />
       </list>
     </recent_temporary>
   </component>
@@ -693,26 +700,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-292" y="-1057" width="1920" height="1057" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21302083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39676112" sideWeight="0.5130208" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32062146" sideWeight="0.48697916" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5172065" sideWeight="0.48697916" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71153843" sideWeight="0.47760418" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4200405" sideWeight="0.4859375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30932203" sideWeight="0.47760418" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4200405" sideWeight="0.4859375" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,7 +764,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/local/config.py" />
     <entry file="file://$PROJECT_DIR$/local/get_locations_sensor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -895,24 +901,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/gps_data_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/comparison_analysis_01192017.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-257">
           <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/comparison_analysis_using_location_features.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -962,13 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="57" column="69" lean-forward="false" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/comparison_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-555">
-          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1035,42 +1020,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/extract_query_from_field_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="97" column="232" lean-forward="false" selection-start-line="97" selection-start-column="201" selection-end-line="97" selection-end-column="232" />
-          <folding>
-            <marker date="1488082125000" expanded="true" signature="1389:1421" ph="SELECT * FRO... final_participants" />
-            <marker date="1488082125000" expanded="true" signature="1850:1889" ph="SELECT * FRO... user_field_session_period" />
-            <marker date="1488082125000" expanded="true" signature="3024:3214" ph="SELECT userI... pages" />
-            <marker date="1488082125000" expanded="true" signature="5028:5118" ph="INSERT INTO pages_field_session... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/lab_task1_to_running_time.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="81" column="36" lean-forward="false" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/search_log_to_page_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2325">
-          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-          <folding>
-            <marker date="1485270189000" expanded="true" signature="2069:2133" ph="SELECT userI... pages_test" />
-            <marker date="1485270189000" expanded="true" signature="2424:2456" ph="SELECT * FRO... final_participants" />
-            <marker date="1485270189000" expanded="true" signature="9411:9903" ph="INSERT INTO user_pages_visit_list... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/TH_data_merging.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="94" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1081,11 +1034,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/local/extract_query_from_field_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="97" column="232" lean-forward="false" selection-start-line="97" selection-start-column="201" selection-end-line="97" selection-end-column="232" />
+          <folding>
+            <marker date="1488082125000" expanded="true" signature="1389:1421" ph="SELECT * FRO... final_participants" />
+            <marker date="1488082125000" expanded="true" signature="1850:1889" ph="SELECT * FRO... user_field_session_period" />
+            <marker date="1488082125000" expanded="true" signature="3024:3214" ph="SELECT userI... pages" />
+            <marker date="1488082125000" expanded="true" signature="5028:5118" ph="INSERT INTO pages_field_session... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/TH_data_merging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="135" column="17" lean-forward="true" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+          <folding>
+            <marker date="1489382799000" expanded="true" signature="1818:1853" ph="SELECT * FRO... user_TH_Boris_results" />
+            <marker date="1489382799000" expanded="true" signature="1971:2006" ph="SELECT * FRO... user_TH_vCode_results" />
+            <marker date="1489382799000" expanded="true" signature="2144:2187" ph="SELECT * FRO... final_participants" />
+            <marker date="1489382799000" expanded="true" signature="2144:2195" ph="SELECT * FRO... final_participants" />
+            <marker date="1489382799000" expanded="true" signature="2144:2213" ph="SELECT * FRO... final_participants" />
+            <marker date="1489382799000" expanded="true" signature="3736:3850" ph="INSERT INTO user_TH_merged_results... " />
+            <marker date="1489382799000" expanded="true" signature="4405:4519" ph="INSERT INTO user_TH_merged_results... " />
+            <marker date="1489382799000" expanded="true" signature="4405:4520" ph="INSERT INTO user_TH_merged_results... " />
+            <marker date="1489382799000" expanded="true" signature="4745:4796" ph="SELECT * FRO... final_participants" />
+            <marker date="1489382799000" expanded="true" signature="6372:6486" ph="INSERT INTO user_TH_merged_results... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/WS_get_query_document.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="67" column="116" lean-forward="false" selection-start-line="67" selection-start-column="116" selection-end-line="67" selection-end-column="116" />
+          <folding>
+            <element signature="e#88#102#0" expanded="true" />
+            <marker date="1489913019000" expanded="true" signature="1550:1652" ph="SELECT userI... pages_lab" />
+            <marker date="1489913019000" expanded="true" signature="1812:1844" ph="SELECT * FRO... final_participants" />
+            <marker date="1489913019000" expanded="true" signature="2041:2062" ph="SELECT userI... user_task1_answering_time" />
+            <marker date="1489913019000" expanded="true" signature="2041:2166" ph="SELECT userI... user_task1_answering_time" />
+            <marker date="1489913019000" expanded="true" signature="8408:8519" ph="INSERT INTO " />
+            <marker date="1489913019000" expanded="true" signature="11765:11874" ph="INSERT INTO user_WS_query_assessment... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/search_log_to_page_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding>
+            <marker date="1485270189000" expanded="true" signature="2069:2133" ph="SELECT userI... pages_test" />
+            <marker date="1485270189000" expanded="true" signature="2424:2456" ph="SELECT * FRO... final_participants" />
+            <marker date="1485270189000" expanded="true" signature="9411:9903" ph="INSERT INTO user_pages_visit_list... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <first_editor relative-caret-position="307">
+            <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1097,18 +1110,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/WS_get_query_document.py">
+    <entry file="file://$PROJECT_DIR$/local/comparison_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="67" column="116" lean-forward="false" selection-start-line="67" selection-start-column="116" selection-end-line="67" selection-end-column="116" />
+        <state relative-caret-position="-301">
+          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
           <folding>
-            <element signature="e#88#102#0" expanded="true" />
-            <marker date="1489913019000" expanded="true" signature="1550:1652" ph="SELECT userI... pages_lab" />
-            <marker date="1489913019000" expanded="true" signature="1812:1844" ph="SELECT * FRO... final_participants" />
-            <marker date="1489913019000" expanded="true" signature="2041:2062" ph="SELECT userI... user_task1_answering_time" />
-            <marker date="1489913019000" expanded="true" signature="2041:2166" ph="SELECT userI... user_task1_answering_time" />
-            <marker date="1489913019000" expanded="true" signature="8408:8519" ph="INSERT INTO " />
-            <marker date="1489913019000" expanded="true" signature="11765:11874" ph="INSERT INTO user_WS_query_assessment... " />
+            <marker date="1484861645000" expanded="true" signature="3221:3250" ph="SELECT * FRO... individual_data" />
+            <marker date="1484861645000" expanded="true" signature="3356:3379" ph="SELECT * FRO... dyad_data" />
+            <marker date="1484861645000" expanded="true" signature="3757:3784" ph="SELECT * FRO... mobility_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/gps_data_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2670">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/comparison_analysis_using_location_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="889">
+          <caret line="183" column="59" lean-forward="false" selection-start-line="183" selection-start-column="59" selection-end-line="183" selection-end-column="59" />
+          <folding>
+            <marker date="1490713234000" expanded="true" signature="2157:2186" ph="SELECT * FRO... individual_data" />
+            <marker date="1490713234000" expanded="true" signature="2292:2315" ph="SELECT * FRO... dyad_data" />
+            <marker date="1490713234000" expanded="true" signature="2713:2807" ph="SELECT userI... user_location_diversity" />
+            <marker date="1490713234000" expanded="true" signature="2929:2973" ph="SELECT * FRO... mobility_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/CIS_application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1490724683000" expanded="true" signature="2016:2163" ph="SELECT * FRO... user_TH_Boris_results" />
+            <marker date="1490724683000" expanded="true" signature="2016:2185" ph="SELECT userI... user_field_session_coverage" />
+            <marker date="1490724683000" expanded="true" signature="2016:2205" ph="SELECT userI... user_field_session_coverage" />
+            <marker date="1490724683000" expanded="true" signature="2016:2221" ph="SELECT userI... user_field_session_coverage" />
+            <marker date="1490724683000" expanded="true" signature="2422:2585" ph="SELECT userI... user_field_session_coverage" />
+            <marker date="1490724683000" expanded="true" signature="2422:2620" ph="SELECT userI... user_field_session_coverage" />
+            <marker date="1490724683000" expanded="true" signature="2784:2896" ph="SELECT userI... user_field_sessioin_coverage" />
+            <marker date="1490724683000" expanded="true" signature="3038:3162" ph="SELECT * FRO... user_online_diversity" />
+            <marker date="1490724683000" expanded="true" signature="3304:3463" ph="SELECT userI... individual_data" />
+            <marker date="1490724683000" expanded="true" signature="3587:3647" ph="SELECT userI... mobility_data" />
+            <marker date="1490724683000" expanded="true" signature="3791:3869" ph="SELECT userI... user_location_diversity" />
+            <marker date="1490724683000" expanded="true" signature="4610:4645" ph="SELECT * FRO... user_TH_vCode_results" />
+            <marker date="1490724683000" expanded="true" signature="4783:4834" ph="SELECT * FRO... final_participants" />
+            <marker date="1490724683000" expanded="true" signature="6375:6489" ph="INSERT INTO user_TH_merged_results... " />
+            <marker date="1490724683000" expanded="true" signature="7044:7158" ph="INSERT INTO user_TH_merged_results... " />
           </folding>
         </state>
       </provider>

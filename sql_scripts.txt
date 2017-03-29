@@ -1,0 +1,10 @@
+select userID, stageID,questionID,url as current_url,min(localTimestamp_int),max(localTimestamp_int), max(localTimestamp_int)-min(localTimestamp_int) as duration
+from keystroke_data
+group by userID,stageID,questionID,url
+
+select userID,stageID,questionID,url as current_url,min(localTimestamp_int) as start_time,end_time 
+from 
+(
+	select k1.userID,
+		, (select max(localTimestamp_int)) from 
+)

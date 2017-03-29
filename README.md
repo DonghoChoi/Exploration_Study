@@ -25,6 +25,7 @@ Repository for Exploration Study Project
 **[General Data Analysis]**
 - comparison_analysis_using_location_features.py: reads
 - join_tables.py: create an aggregated view that contains independent variables.
+- CIS_application.py: code for CIS application test
 
 **[Treasure Hunt Data Process]**
 - parse_video_coding_vcode.py: read the coding data from the **vCode** program in the text format and store them into the mysql db in the server **[output table: user_TH_vCode_results]**
