@@ -8,3 +8,8 @@ from
 	select k1.userID,
 		, (select max(localTimestamp_int)) from 
 )
+
+select userID, avg(Coverage) as avg_cov_withzero, avg(UsefulCoverage) as avg_usecov_withzero from user_field_session_coverage where UsefulCoverage > 0 group by userID
+
+
+UPDATE pages_field_session_backup_040317 SET date_time = FROM_UNIXTIME(FLOOR(epoch_time/1000));

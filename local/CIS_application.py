@@ -2,10 +2,8 @@
 # Author: Dongho Choi
 '''
 This script
-(1) import coding data from BORIS, which is located in the table named 'user_TH_Boris_results'
-(2) calculate the time spent on each information patch
-(3) import coding data from vCode, which is located in the table named 'user_TH_vCode_results'
-(4) since there are some changes/differences in vCode data format (e.g., time unit is millisecond, and labels for the location and information patch were updated after coding of user7 and user8's data), these changes should be considered in this process
+(1) read multiple tables from data base
+(2) join the tables into one for analysis
 
 '''
 
@@ -86,58 +84,5 @@ if __name__ == "__main__":
     df_join = pd.merge(df_join, df_location_diversity, on='userID', how='inner')
     print(df_join)
     print(df_join.corr(method='pearson'))
-
-
-
-
-
-    # import vCode coding data
-    df_vcode_data = pd.read_sql('SELECT * FROM user_TH_vCode_results', con=connection)
-    print("vCode data imported.")
-
-    # select userID whose data is coded by Boris
-    df_boris_userID = pd.read_sql("SELECT * FROM final_participants WHERE TH = 'Boris'", con=connection)
-    userID_boris = df_boris_userID['userID'].tolist()
-
-    for i in userID_boris:
-        userID = i
-        print("Current userID: {0}".format(userID))
-        df_current_user_boris_data = df_boris_data[df_boris_data.userID==userID] #subset of df for current userID
-        df_current_user_boris_data = df_current_user_boris_data.sort_values(['id'])
-        df_current_user_infopatch = df_current_user_boris_data[df_current_user_boris_data.behavior == 'InfoPatch']
-        df_current_user_rest = df_current_user_boris_data[df_current_user_boris_data.behavior!='InfoPatch'] # Location marks as well as task related marks
-        ## Information Patches
-        if (len(df_current_user_infopatch)%2 != 0):
-            print("########## Information Patch coding has an error! ##########")
-        for j in range(0, int(len(df_current_user_infopatch)/2)):
-            start_time = df_current_user_infopatch.iloc[2*j+0,df_current_user_infopatch.columns.get_loc('observed_time')]
-            end_time = df_current_user_infopatch.iloc[2*j+1,df_current_user_infopatch.columns.get_loc('observed_time')]
-
-            label_0 = df_current_user_infopatch.iloc[2*j+0,df_current_user_infopatch.columns.get_loc('label')]
-            label_1 = df_current_user_infopatch.iloc[2*j+1,df_current_user_infopatch.columns.get_loc('label')]
-
-            behavior = 'InfoPatch'
-
-            if (label_0 != label_1):
-                print("--------- LABEL MISMATCH -----------")
-
-            duration_time = end_time-start_time
-
-            sql = "INSERT INTO user_TH_merged_results (userID,observed_time,duration,label,behavior) VALUES ({0},{1},{2},'{3}','{4}')".\
-                format(str(userID),str(start_time),str(duration_time),str(label_0),str(behavior))
-            print(sql)
-            cursor.execute(sql)
-
-        ## Rest marks
-        for k in range(0,len(df_current_user_rest)):
-            cur_time = df_current_user_rest.iloc[k,df_current_user_rest.columns.get_loc('observed_time')]
-            label = df_current_user_rest.iloc[k,df_current_user_rest.columns.get_loc('label')]
-            behavior = df_current_user_rest.iloc[k,df_current_user_rest.columns.get_loc('behavior')]
-
-            sql = "INSERT INTO user_TH_merged_results (userID,observed_time,duration,label,behavior) VALUES ({0},{1},{2},'{3}','{4}')".\
-                format(str(userID),str(cur_time),str(0),str(label),str(behavior))
-            print(sql)
-            cursor.execute(sql)
-
 
 

@@ -11,6 +11,7 @@ Repository for Exploration Study Project
 - gps_data_analysis.py: read the gps data to populate the location list as well as s_k ratio or gyration **[output table: mobility_data]**.
 - gps_to_location_list.py: read the gps data and figure the location list of each participant, putting them into the mysql server with variables of 'userID', 'locationID', 'latitude', 'longitude', 'visit_times', 'spent_time', 'routine' **[output table:user_location_list]**.
 - calculate_location_diversity.py: Read user_location_list table, calculate (1) number of locations, (2) location diversity, and (3) location loyalty, and save it into the **[output table:user_location_diversity]**
+- parse_KML_files.py: read users' KML file to store them in MySQL database for following data work and analysis.
 
 **[Search Data Process]**
 - search_log_analysis_dyad.py: read search log data from lab session, calculate measures for all possible pairs. **[output table: dyad_data]**
