@@ -100,6 +100,7 @@ if __name__ == "__main__":
     #for i in range(0,1):
         df_user_visits = pd.DataFrame(columns=('userID', 'visit_start', 'visit_end', 'dwellTime', 'latitude', 'longitude'))
         current_userID = participants_list[i]
+        print("current_userID: {0}".format(current_userID))
         df_temp_locations = df_locations_all.loc[df_locations_all['userID'] == current_userID] # location list of a particular user
         df_temp_locations = df_temp_locations.sort_values(by='timestamp')
         current_location = (df_temp_locations.iloc[0]['latitude'],df_temp_locations.iloc[0]['longitude']) # the first line of the list
@@ -132,8 +133,6 @@ if __name__ == "__main__":
                     visit_start = datetime.datetime.strptime(df_temp_locations.iloc[j]['date_time'],
                                                              datetimeFormat)
                     visit_end = datetime.datetime.strptime(df_temp_locations.iloc[j]['date_time'], datetimeFormat)
-
-        #print(df_user_visits)
 
         df_user_location_list = pd.DataFrame(columns=('userID','locationID','latitude','longitude','visit_times','spent_time'))
 
@@ -180,9 +179,11 @@ if __name__ == "__main__":
         for l in range(0,len(df_user_location_list)):
             current_location = (df_user_location_list.iloc[l]['latitude'],df_user_location_list.iloc[l]['longitude'])
             gyration_sum = gyration_sum + df_user_location_list.iloc[l]['visit_times'] * pow(vincenty(current_location, (center_of_mass[0],center_of_mass[1])).meters, 2)
-        gyration_sum = math.sqrt(gyration_sum/len(df_user_location_list))
+        #gyration_sum = math.sqrt(gyration_sum/len(df_user_location_list))
+        gyration_sum_new = math.sqrt(gyration_sum/(df_user_location_list['visit_times'].sum()))
 
-        print("gyration_sum of user {0}: {1}".format(current_userID, gyration_sum))
+        #print("gyration_sum of user {0}: {1}, len(df_user_location_list): {2}".format(current_userID, gyration_sum, len(df_user_location_list)))
+        print("[NEW] gyration_sum of user {0}: {1}, sum of visits: {2}".format(current_userID, gyration_sum_new, df_user_location_list['visit_times'].sum()))
 
         # Calculating the total of radius of gyration of the k-th most frequented locations
         #number_k = (len(df_user_location_list))//3
@@ -196,21 +197,24 @@ if __name__ == "__main__":
             current_location = (df_user_location_list_k.iloc[l]['latitude'], df_user_location_list_k.iloc[l]['longitude'])
             gyration_sum_k = gyration_sum_k + df_user_location_list_k.iloc[l]['visit_times'] * pow(
                 vincenty(current_location, (center_of_mass_k[0], center_of_mass_k[1])).meters, 2)
-        gyration_sum_k = math.sqrt(gyration_sum_k / len(df_user_location_list_k))
+        #gyration_sum_k = math.sqrt(gyration_sum_k / len(df_user_location_list_k))
+        gyration_sum_k_new = math.sqrt(gyration_sum_k/(df_user_location_list_k['visit_times'].sum()))
 
-        print("gyration_sum_k of user {0}: {1}".format(current_userID, gyration_sum_k))
+        #print("gyration_sum_k of user {0}: {1}, len(df_user_location_list_k): {2}".format(current_userID, gyration_sum_k, len(df_user_location_list_k)))
+        print("[NEW] gyration_sum_k of user {0}: {1}, sum of visits: {2}".format(current_userID,gyration_sum_k_new, df_user_location_list_k['visit_times'].sum()))
 
-        s_k_ratio = gyration_sum_k/gyration_sum
+        #s_k_ratio = gyration_sum_k/gyration_sum
+        s_k_ratio_new = gyration_sum_k_new/gyration_sum_new
 
-        print("s_k of user %i = %f" % (current_userID, s_k_ratio))
+        #print("s_k of user %i = %f" % (current_userID, s_k_ratio))
+        print("[NEW] s_k of user {0} = {1}".format(current_userID, s_k_ratio_new))
 
         # Calculating the location diversity and loyalty
         print("total visits in df_user_location_list:{}",len(df_user_location_list))
 
-
         #print(df_user_location_list)
 
-        series_user_mobility = pd.Series([current_userID,len(df_user_location_list), number_k, gyration_sum, gyration_sum_k, s_k_ratio], index=['userID','visited_locations','k','gyration_all','gyration_k','s_k'])
+        series_user_mobility = pd.Series([current_userID, df_user_location_list['visit_times'].sum(), number_k, df_user_location_list_k['visit_times'].sum(),gyration_sum_new, gyration_sum_k_new, s_k_ratio_new], index=['userID','visited_locations','k','visited_locations_k','gyration_all','gyration_k','s_k'])
         df_mobility = df_mobility.append(series_user_mobility,ignore_index=True)
 
     #print(df_visits)
@@ -218,7 +222,7 @@ if __name__ == "__main__":
 
     # MOBILITY DATA INTO SERVER
     for i in range(0, len(df_mobility)):
-        sql = "INSERT INTO mobility_data (userID,visited_locations,k,gyration_all,gyration_k,s_k) VALUES (" + str(df_mobility.iloc[i]['userID']) + "," + str(df_mobility.iloc[i]['visited_locations']) + "," + str(df_mobility.iloc[i]['k']) + "," + str(df_mobility.iloc[i]['gyration_all']) + "," + str(df_mobility.iloc[i]['gyration_k']) + "," + str(df_mobility.iloc[i]['s_k']) + ");"
+        sql = "INSERT INTO mobility_data (userID,visited_locations,k,visited_locations_k,gyration_all,gyration_k,s_k) VALUES (" + str(df_mobility.iloc[i]['userID']) + "," + str(df_mobility.iloc[i]['visited_locations']) + "," + str(df_mobility.iloc[i]['k']) + "," + str(df_mobility.iloc[i]['visited_locations_k'])+","+str(df_mobility.iloc[i]['gyration_all']) + "," + str(df_mobility.iloc[i]['gyration_k']) + "," + str(df_mobility.iloc[i]['s_k']) + ");"
         cursor.execute(sql)
 
     server.stop()

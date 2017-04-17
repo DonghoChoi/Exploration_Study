@@ -12,4 +12,106 @@ from
 select userID, avg(Coverage) as avg_cov_withzero, avg(UsefulCoverage) as avg_usecov_withzero from user_field_session_coverage where UsefulCoverage > 0 group by userID
 
 
-UPDATE pages_field_session_backup_040317 SET date_time = FROM_UNIXTIME(FLOOR(epoch_time/1000));
+# Create a table of pages in field session, duplicates removed
+CREATE TABLE user_pages_field_session_distinct AS (
+    SELECT DISTINCT userID,epoch_time,url,query 
+    FROM pages_field_session
+)
+
+# Getting datetime from epoch time data
+UPDATE user_pages_field_session_distinct SET date_time = FROM_UNIXTIME(FLOOR(epoch_time/1000));
+
+# Update location id if that location is same with previous one
+UPDATE location_responses_matching_location_id SET location_id= CASE
+WHEN same!=0 THEN same
+ELSE location_id
+END
+
+# Converting varchar into float
+UPDATE TH_Info_coords SET
+x_coord = CAST(X_text AS DECIMAL(10,6)),
+y_coord = CAST(Y_text AS DECIMAL(10,6)),
+z_coord = CAST(Z_text AS DECIMAL(10,6));
+
+# Count label and sort 
+SELECT label,COUNT(*) FROM user_TH_merged_results WHERE (userID=21 AND behavior='InfoPatch') GROUP BY label ORDER BY COUNT(*) DESC;
+
+# Join s_k features
+CREATE VIEW s_k_table
+AS
+(
+	SELECT field_mob.userID,field_mob.s_k as field_s_k,TH_mob.s_k as TH_s_k,TH_task1_mob.s_k as TH_task1_s_k
+	FROM mobility_data field_mob
+	LEFT JOIN `TH_mobility_data` TH_mob ON field_mob.userID=TH_mob.userID
+	LEFT JOIN `TH_mobility_data_task1` TH_task1_mob ON field_mob.userID=TH_task1_mob.userID
+	ORDER BY field_mob.userID
+)
+
+# Join diversity/loyalty features
+CREATE VIEW diversity_table
+AS
+(
+	SELECT od.userID,od.online_diversity,od.online_loyalty,ld.location_diversity,ld.location_loyalty
+	FROM user_online_diversity od
+	LEFT JOIN user_location_diversity ld ON od.userID=ld.userID
+	ORDER BY od.userID
+)
+
+CREATE TABLE `WS_eye_fixations` (
+  `userID` int(11) DEFAULT NULL,
+  `CNT` int(11) DEFAULT NULL,
+  `TIME` float DEFAULT NULL,
+  `TIMETICK` bigint DEFAULT NULL,
+  `FPOGX` float DEFAULT NULL,
+  `FPOGY` float DEFAULT NULL,
+  `FPOGS` float DEFAULT NULL,
+  `FPOGD` float DEFAULT NULL,
+  `FPOGID` int(11) DEFAULT NULL,
+  `FPOGV` int(11) DEFAULT NULL,
+  `BPOGX` float DEFAULT NULL,
+  `BPOGY` float DEFAULT NULL,
+  `BPOGV` int(11) DEFAULT NULL,
+  `CX` float DEFAULT NULL,
+  `CY` float DEFAULT NULL,
+  `CS` int(11) DEFAULT NULL,
+  `USER` varchar(255) DEFAULT NULL,
+  `LPCX` float DEFAULT NULL,
+  `LPCY` float DEFAULT NULL,
+  `LPD` float DEFAULT NULL,
+  `LPS` float DEFAULT NULL,
+  `LPV` int(11) DEFAULT NULL,
+  `RPCX` float DEFAULT NULL,
+  `RPCY` float DEFAULT NULL,
+  `RPD` float DEFAULT NULL,
+  `RPS` float DEFAULT NULL,
+  `RPV` int(11) DEFAULT NULL,
+  `BKID` int(11) DEFAULT NULL,
+  `BKDUR` float DEFAULT NULL,
+  `BKPMIN` int(11) DEFAULT NULL,
+  `MEDIA_ID` int(11) DEFAULT NULL,
+  `MEDIA_NAME` varchar(255) DEFAULT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+select field1,field2,field3, count(*)
+  from table_name
+  group by field1,field2,field3
+  having count(*) > 1
+
+# WS log data and eye gaze data time-matching
+update WS_eye_fixations_timeStamp set time_difference= TIME-299.34323 where userID=2
+update WS_eye_fixations_timeStamp set localTimestamp_int = (time_difference*1000)+1481414804317 where userID=2
+
+# Fix the userID issue: user6 & user22
+update WS_page_action_keystroke set userID=220 where userID=6 and data_source='actions'
+update WS_page_action_keystroke set userID=6 where userID=22 and data_source='actions'
+update WS_page_action_keystroke set userID=22 where userID=220 and data_source='actions'
+
+update WS_page_action_keystroke set userID=220 where userID=6 and data_source='keystroke'
+update WS_page_action_keystroke set userID=6 where userID=22 and data_source='keystroke'
+update WS_page_action_keystroke set userID=22 where userID=220 and data_source='keystroke'
+
+update session_progress set userID=220 where userID=6 
+update session_progress set userID=6 where userID=22
+update session_progress set userID=22 where userID=220

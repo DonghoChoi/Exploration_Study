@@ -16,12 +16,13 @@ Repository for Exploration Study Project
 **[Search Data Process]**
 - search_log_analysis_dyad.py: read search log data from lab session, calculate measures for all possible pairs. **[output table: dyad_data]**
 - search_log_to_page_list.py: read search log data from field session, extract web pages they visited, calculating distinct pages, visit_times, spent_time, routine.. **[output table:user_pages_visit_list]**
-- calculage_browse_diversity.py: Read user_pages_visit_list table, calculate (1) number of distinct domains, (2) browse diversity, and (3) browse loyalty, and save it into the **[output table:user_browse_history]**
+- calculate_online_diversity.py: Read user_pages_visit_list table, calculate (1) number of distinct domains, (2) browse diversity, and (3) browse loyalty, and save it into the **[output table:user_online_diversity]**
 - lab_task1_to_running_time.py: read search log data from lab session and calculate the time spent each activity. **[output table: user_task1_answering_time]**
 - extract_query_from_field_search.py: out of four-week field search data, this code mines search sessions and extracts distinct queries, coverage, useful coverage, etc. **[output table:pages_field_session]**
 - mine_sessions_from_field_search.py: **[input table:pages_field_session]** mine subsessions in the pages list and merge them into sessions with sessionID **[output table: user_field_search_session]** and the number of issued queries and distinct queries **[output table: user_field_queries]** 
 - calculate_coverage_field_session.py: **[input table:user_field_search_session]** calculate coverage, useful coverage, and utilization ratio for each search session **[output table:user_field_session_coverage]**.
 - WS_get_query_document.py: read **[input table:page_lab]** table to summarize the queries and number of visited document corresponding to the query in each task. **[output table:user_WS_query_assessment]**
+
 
 **[General Data Analysis]**
 - comparison_analysis_using_location_features.py: reads
@@ -32,6 +33,8 @@ Repository for Exploration Study Project
 - parse_video_coding_vcode.py: read the coding data from the **vCode** program in the text format and store them into the mysql db in the server **[output table: user_TH_vCode_results]**
 - parse_video_coding_boris.py: read the coding data from the **Boris** program, which is in tsv format, and store them into the mysql db in the server **[output table: user_TH_Boris_results]**.
 - TH_data_merging.py: read both vCode and Boris coding data and merge them into a table **[output table: user_TH_merged_results]**
+- TH_cal_r_g.py: calculate the radius of gyration out of treasure hunt **[output table:TH_mobility_data]**
+- TH_cal_r_g_task1.py: calculate the radius of gyration during the task 1 of treasure hunt: **[output table:TH_mobility_data_task1]**
 
 **[Survey Data]**
 - calculate_personality.py: read user_personality_responses table, which was already imported from the survey responses, and calculate the five category scores to save them into user_personality table.
