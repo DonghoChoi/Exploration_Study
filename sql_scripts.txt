@@ -115,3 +115,48 @@ update WS_page_action_keystroke set userID=22 where userID=220 and data_source='
 update session_progress set userID=220 where userID=6 
 update session_progress set userID=6 where userID=22
 update session_progress set userID=22 where userID=220
+
+# copy fixations data into the table with timestamp
+INSERT INTO WS_eye_fixations_timeStamp (userID,CNT,TIME,TIMETICK,FPOGX,FPOGY,FPOGS,FPOGD,FPOGID,FPOGV,BPOGX,BPOGY,BPOGV,CX,CY,CS,LPCX,LPCY,LPD,LPS,LPV,RPCX,RPCY,RPD,RPS,RPV,BKID,BKDUR,BKPMIN,USER,MEDIA_ID,MEDIA_NAME) SELECT userID,CNT,TIME,TIMETICK,FPOGX,FPOGY,FPOGS,FPOGD,FPOGID,FPOGV,BPOGX,BPOGY,BPOGV,CX,CY,CS,LPCX,LPCY,LPD,LPS,LPV,RPCX,RPCY,RPD,RPS,RPV,BKID,BKDUR,BKPMIN,USER,MEDIA_ID,MEDIA_NAME FROM WS_eye_fixations WHERE userID=7
+
+# copy eye-gaze data into the WS_page_action_keystroke_gaze
+INSERT INTO WS_page_action_keystroke_fixation (userID,CNT,localTimestamp_int,FPOGX,FPOGY,FPOGS,FPOGD,FPOGID) SELECT userID,CNT,localTimestamp_int,FPOGX,FPOGY,FPOGS,FPOGD,FPOGID FROM WS_eye_fixations_timeStamp WHERE userID=2
+
+UPDATE WS_page_action_keystroke_fixation SET data_source="fixation" WHERE CNT IS NOT NULL
+
+# CREATE VIEW - WS_EYE_combine
+CREATE VIEW WS_EYE_combine 
+AS(
+	SELECT ed.userID,ed.pageID,ed.page_index,ed.duration,pl.query,pl.url
+	FROM WS_eye_duration_per_page ed
+	LEFT JOIN pages_lab pl ON ed.pageID=pl.pageID
+	ORDER BY ed.userID
+)
+
+# CREATE TABLE - WS_eye_duration_per_page_with_url
+CREATE TABLE WS_eye_duration_per_page_with_url
+AS(
+  SELECT ed.userID,ed.pageID,ed.page_index,ed.duration,pl.query,pl.url,pl.host
+  FROM WS_eye_duration_per_page ed
+  LEFT JOIN pages_lab pl ON ed.pageID=pl.pageID
+  ORDER BY ed.userID
+)
+
+# update WS_page_start_end_time table
+UPDATE WS_page_start_end_time SET duration_int=end_time-start_time
+UPDATE WS_page_start_end_time SET duration_seconds = duration_int/1000
+
+# update 
+UPDATE WS_eye_duration_per_page_with_url JOIN WS_page_start_end_time ON WS_eye_duration_per_page_with_url.pageID=WS_page_start_end_time.pageID SET WS_eye_duration_per_page_with_url.duration_from_pages=WS_page_start_end_time.duration_seconds;
+
+# Adding valid_page_index column: it equals to -1 if it is not useful webpage visit.
+UPDATE WS_eye_duration_per_page_with_url JOIN WS_url_list ON
+WS_eye_duration_per_page_with_url.url=WS_url_list.url SET
+WS_eye_duration_per_page_with_url.valid_page_index=WS_url_list.distinct_url_index
+WHERE userID=2
+
+UPDATE WS_eye_duration_per_page_with_url SET valid_page_index=page_index
+UPDATE WS_eye_duration_per_page_with_url SET valid_page_index=-1 WHERE (host='peopleanalytics.org' OR host='')
+
+
+

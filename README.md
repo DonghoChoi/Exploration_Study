@@ -22,7 +22,7 @@ Repository for Exploration Study Project
 - mine_sessions_from_field_search.py: **[input table:pages_field_session]** mine subsessions in the pages list and merge them into sessions with sessionID **[output table: user_field_search_session]** and the number of issued queries and distinct queries **[output table: user_field_queries]** 
 - calculate_coverage_field_session.py: **[input table:user_field_search_session]** calculate coverage, useful coverage, and utilization ratio for each search session **[output table:user_field_session_coverage]**.
 - WS_get_query_document.py: read **[input table:page_lab]** table to summarize the queries and number of visited document corresponding to the query in each task. **[output table:user_WS_query_assessment]**
-
+- WS_eye_duration_time: select pages in which the user looks at content in the page other than other part of the browser screen. **[output table: WS_eye_fixation_per_page & WS_eye_duration_per_page]**
 
 **[General Data Analysis]**
 - comparison_analysis_using_location_features.py: reads

@@ -64,7 +64,8 @@ if __name__ == "__main__":
     userID_list = df_participants['userID'].tolist()
     '''
     #userID_list = [2,10,22,7]
-    userID_list = [8,11,12,20,21,25]
+    #userID_list = [8,11,12,20,21,25]
+    userID_list = [2,10,22,7,8,11,12,20,21,25,6,14,16,23,42,26,27,32,46,1,3,5,9,28,34,35,37,38,40,45]
     # TH behavior data for the whole session
     #for i in range(0,1):
     for i in range(0,len(userID_list)): # i - current userID
@@ -88,6 +89,11 @@ if __name__ == "__main__":
                 temp_start_time = df_user_pages_lab.iloc[j]['localTimestamp_int']
                 temp_end_time = df_user_pages_lab.iloc[j+1]['localTimestamp_int']
                 #print(temp_page_index,temp_start_time,temp_end_time)
+                sql="INSERT INTO WS_page_start_end_time (userID,pageID,page_index,start_time,end_time) VALUES ({0},{1},{2},{3},{4})".\
+                    format(str(current_userID),str(temp_pageID),str(temp_page_index),str(temp_start_time),str(temp_end_time))
+                print(sql)
+                cursor.execute(sql)
+                '''
                 row = [{'page_index':temp_page_index,'pageID':temp_pageID,'start_time':temp_start_time,'end_time':temp_end_time}]
                 temp_row = pd.DataFrame(row)
                 #print(temp_row)
@@ -96,6 +102,7 @@ if __name__ == "__main__":
                 print("page_index:{0}".format(temp_page_index))
                 print(df_user_fixations['FPOGID'])
                 duration_time = 0
+                
                 for k in range(0,len(df_user_fixations)):
                     # store: userID,pageID,page_index,FPOGX,FPOGY,FPOGS,FPOGD,FPOGID
                     fpogx = float(df_user_fixations.iloc[k]['FPOGX'])
@@ -113,7 +120,7 @@ if __name__ == "__main__":
                     #
                     if (fpogx<x_max and fpogx>x_min and fpogy<y_max and fpogy>y_min):
                         duration_time = duration_time + fpogd
-
+                
                 stored_durations = pd.read_sql("SELECT COUNT(id) as instances FROM WS_eye_duration_per_page WHERE userID={0} AND pageID={1};".format(current_userID,temp_pageID),con=connection)
                 if (stored_durations.iloc[0]['instances']==0):
                     print("NEW EYE_DURATION_PER_PAGE DATA IMPORTING")
@@ -121,9 +128,9 @@ if __name__ == "__main__":
                         format(str(current_userID),str(temp_pageID),str(temp_page_index),str(duration_time))
                     print(sql)
                     cursor.execute(sql)
-
+                
                 print("pageID: {0}, page_index:{1}, duration_time:{2}".format(temp_pageID,temp_page_index,duration_time))
-
+                '''
                 #df_user_page_duration=df_user_page_duration.append(temp_row)
 
 
