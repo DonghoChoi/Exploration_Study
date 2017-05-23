@@ -142,6 +142,16 @@ AS(
   ORDER BY ed.userID
 )
 
+# CREATE VIEW - WS_duration_query_url
+CREATE VIEW WS_duration_query_url
+AS(
+  SELECT pd.userID,pd.pageID,pd.duration_seconds,pl.query,pl.url
+  FROM WS_page_start_end_time pd
+  LEFT JOIN pages_lab pl ON pd.pageID=pl.pageID
+  ORDER BY pd.userID
+)
+
+
 # update WS_page_start_end_time table
 UPDATE WS_page_start_end_time SET duration_int=end_time-start_time
 UPDATE WS_page_start_end_time SET duration_seconds = duration_int/1000
@@ -158,5 +168,10 @@ WHERE userID=2
 UPDATE WS_eye_duration_per_page_with_url SET valid_page_index=page_index
 UPDATE WS_eye_duration_per_page_with_url SET valid_page_index=-1 WHERE (host='peopleanalytics.org' OR host='')
 
+# Add floor variable to the table
 
+SELECT userID, sum(num_assessment) FROM user_WS_query_assessment WHERE (questionID=1 AND query!='') GROUP BY userID
 
+SELECT userID, running_time FROM user_task1_answering_time WHERE questionID=1
+
+SELECT userID, sum(visits) FROM TH_floor_visit_duration GROUP BY userID
