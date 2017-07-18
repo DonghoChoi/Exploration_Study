@@ -36,6 +36,9 @@ Repository for Exploration Study Project
 - TH_cal_r_g.py: calculate the radius of gyration out of treasure hunt **[output table:TH_mobility_data]**
 - TH_cal_r_g_task1.py: calculate the radius of gyration during the task 1 of treasure hunt: **[output table:TH_mobility_data_task1]**
 
+**[Escape Room Data Process]**
+- parse_video_coding_boris_ER.py: read the coding data from the **Boris** program, which is in tsv format, and store them into the mysql db in the server **[output table: user_ER_Boris_results]**.
+
 **[Survey Data]**
 - calculate_personality.py: read user_personality_responses table, which was already imported from the survey responses, and calculate the five category scores to save them into user_personality table.
 - calculate_Miller.py: read user_Miller_responses table, to calculate and save the Miller score into the table, user_Miller.
